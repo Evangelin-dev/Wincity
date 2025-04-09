@@ -12,7 +12,8 @@
     "bootstrap": "^5.3.5",
     "next": "15.2.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-phone-number-input": "^3.4.12"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

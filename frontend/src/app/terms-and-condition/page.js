@@ -16,13 +16,13 @@ const PrivacyPlicyPage = () => {
   return (
     <div className={styles.terms_condition_bg}>
       <TitleBanner
-        title={<h1 className="text-black">Terms & Conditions</h1>}
+        title={<h1 className="text-white">Terms & Conditions</h1>}
         fontSize="5rem"
         bgColor="white"
         height="30vh"
         showContactUs={false}
       />
-      <div className={`container py-2 text-black`}>
+      <div className={`container py-2 text-white`}>
         <div dangerouslySetInnerHTML={{ __html: content }}></div>
       </div>
     </div>

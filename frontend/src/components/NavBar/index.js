@@ -7,7 +7,7 @@ import CustomButton from "../custom/CustomButton";
 export const MENU = [
   {
     name: "About Us",
-    link: "about-us",
+    link: "/#aboutUs",
   },
   // {
   //   name: "Products",
@@ -15,7 +15,7 @@ export const MENU = [
   // },
   {
     name: "Contact Us",
-    link: "/",
+    link: "/#contactUs",
   },
 ];
 

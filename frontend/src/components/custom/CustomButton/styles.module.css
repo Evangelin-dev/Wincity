@@ -6,9 +6,9 @@
   border-radius: 0.5rem;
   background: linear-gradient(
     88deg,
-    #aa3662 -11.16%,
-    #92254f 46.95%,
-    #750f36 94.89%
+    #7c21fc -11.16%,
+    #7c21fc 46.95%,
+    #5b00d9 94.89%
   );
   color: white;
   width: 100%;
@@ -17,9 +17,9 @@
 .custom_btn:hover {
   background: linear-gradient(
     88deg,
-    #aa3662 -11.16%,
-    #92254f 46.95%,
-    #750f36 94.89%
+    #6a00ff -11.16%,
+    #641fc5 46.95%,
+    #b483f8 94.89%
   ) !important;
   cursor: pointer;
 }

@@ -2,6 +2,7 @@ import Carousel from "@/components/custom/Carousel";
 import CustomButton from "@/components/custom/CustomButton";
 import CustomImage from "@/components/custom/Image";
 import style from "./style.module.css";
+import ContactUs from "@/components/ContactUs";
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const id = params.id;
@@ -19,7 +20,10 @@ export default function Home() {
       <div style={{ position: "relative" }}>
         <Carousel />
       </div>
-      <section className={`mb-5 mt-6 pt-6 ${style.home_scheme_section}`}>
+      <section
+        className={`mb-5 mt-6 pt-6 ${style.home_scheme_section}`}
+        id="aboutUs"
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-flex align-items-center">
@@ -619,6 +623,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <ContactUs />
         </div>
       </section>
     </div>

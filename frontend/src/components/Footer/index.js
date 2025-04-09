@@ -38,8 +38,11 @@ const Footer = () => {
           <div className="col-md-3">
             <div className={`${style.footer_menu_header}`}>Useful Links</div>
             <div className="fw-light py-2">
-              <Link href={"#"} className="py-2 text-white nav-link">
+              <Link href={"/#aboutUs"} className="py-2 text-white nav-link">
                 About Us
+              </Link>
+              <Link href={"/#contactUs"} className="py-2 text-white nav-link">
+                Contact Us
               </Link>
             </div>
           </div>
@@ -64,11 +67,14 @@ const Footer = () => {
             <div className={`${style.footer_menu_header}`}>Contact</div>
             <div className="py-2 text-white nav-link">
               <i class="fa fa-map-marker pe-2 fs-4" aria-hidden="true"></i>
-              <span>XXXXXXXXXXXXXXXXXXXX</span>
+              <span>
+                B-126, FLOOR 12TH, PLOT NO 210, B WING, MITTAL TOWER, FREE PRESS
+                JOURNAL MARG, Nariman Point, Mumbai.
+              </span>
             </div>
             <div className="py-2 text-white nav-link">
               <i class="fa fa-envelope-o pe-2 fs-4" aria-hidden="true"></i>{" "}
-              <span>xxxxxxx@xxx.com</span>
+              <span>kiranmasoriya@wincityinfraworks.com</span>
             </div>
             <div className="py-2 text-white nav-link">
               <i class="fa fa-phone-square pe-2 fs-4" aria-hidden="true"></i>{" "}
