@@ -13,9 +13,9 @@ const ContactUs = () => {
             Get In Touch With You
           </div>
           <div className={`pt-4 pb-4 ${style.contact_content_sub_title}`}>
-            We're always on the lookout to work with new clients. If you're
-            interested in working with us, please get in touch in one of the
-            following ways.
+            We&#39;re always on the lookout to work with new clients. If
+            you&#39;re interested in working with us, please get in touch in one
+            of the following ways.
           </div>
 
           <div className="row fs-6 fw-normal py-1">
