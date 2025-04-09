@@ -1,0 +1,48 @@
+.logo_img_container {
+  position: relative;
+  height: auto;
+  width: 15vw;
+  margin: 0 auto;
+}
+
+.bmi_img_container {
+  position: relative;
+  height: auto;
+  width: 2vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .logo_img_container {
+    height: 5vh !important;
+    width: 10vw !important;
+  }
+  .bmi_img_container {
+    width: 10vw !important;
+  }
+}
+
+.top_nav {
+  align-items: center;
+  /* background-color: #000000; */
+  display: flex;
+  height: 40px;
+  width: 100%;
+}
+
+.share_button {
+  font-size: 1rem;
+  color: white;
+}
+
+.share_button:hover {
+  background: linear-gradient(
+    88deg,
+    #b98043 -11.16%,
+    #b98043 46.95%,
+    #b98043 94.89%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
