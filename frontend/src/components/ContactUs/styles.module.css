@@ -16,8 +16,8 @@
 }
 
 .contact_us_form_p {
-  padding-right: 3rem !important;
-  padding-left: 3rem !important;
+  /* padding-right: 3rem !important;
+  padding-left: 3rem !important; */
 }
 
 @media (max-width: 768px) {
@@ -40,8 +40,8 @@
 }
 
 .contact_us_container {
-  padding-top: 8% !important;
-  padding-bottom: 6% !important;
+  padding-top: 1% !important;
+  padding-bottom: 1% !important;
 }
 
 .bg_white {

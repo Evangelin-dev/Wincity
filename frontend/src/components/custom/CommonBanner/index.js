@@ -15,12 +15,11 @@ const CommonBanner = ({
     );
   }, []);
   return (
-    <div className={`container ${styles.banner_bg} common-bg`}>
+    <div className={`${styles.banner_bg} common-bg`}>
       <div
         id="carouselExampleDark"
-        className="carousel carousel-dark slide"
+        className="carousel carousel-dark slide carosoul_container"
         data-bs-ride="carousel"
-        style={{ height: "90vh" }}
       >
         <div
           className={`carousel-inner ${styles.carousel_inner} d-flex align-items-center`}
@@ -28,7 +27,7 @@ const CommonBanner = ({
           <div className={`carousel-item active`} data-bs-interval="10000">
             <div className="carousel-caption d-flex align-items-center justify-content-center">
               <div className="text-center">
-                <div className={`${styles.banner_title} py-5 m-auto fadeIn`}>
+                <div className={`${styles.banner_title} py-1 m-auto fadeIn`}>
                   {title}
                 </div>
                 <div

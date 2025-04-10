@@ -1,0 +1,21 @@
+.about_us_bg {
+  background: url("/about-us/about-us.jpg") no-repeat right top #121212;
+  background-size: 100% auto;
+  background-color: black;
+  -webkit-animation: animateBackground infinite ease-in-out 55s;
+  -moz-animation: animateBackground infinite ease-in-out 55s;
+  -o-animation: animateBackground infinite ease-in-out 55s;
+  animation: animateBackground infinite ease-in-out 55s;
+  height: auto;
+  /* border-radius: 1rem; */
+  height: 60vh;
+}
+
+.home_scheme_section {
+  margin-top: 5%;
+  color: white;
+}
+
+.about_benner_wrapper {
+  height: auto !important;
+}

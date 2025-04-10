@@ -58,91 +58,111 @@ const ContactUsForm = () => {
           saveContactUs(e);
         }}
         id="contact-us-form"
+        className="d-flex flex-wrap align-items-center row"
       >
         <input type="hidden" value={host} name="source" />
         <input type="hidden" value={loc} name="location" />
-        <div className="form-floating mb-3">
-          <input
-            type="text"
-            className="form-control"
-            id="firstName"
-            placeholder="First Name"
-            name="first_name"
-            required
-          />
-          <label htmlFor="firstName">First Name</label>
+        <div className="col-md-12 text-white py-3 fs-2 fw-bold">
+          <div>Contact Us !</div>
+          <div className="fs-6 fw-normal">
+            Got any questions about the product or scaling on our platform?
+            We're here to help. Chat to our friendly team 24/7 and get onboard
+            in less than 5 minutes.
+          </div>
         </div>
-        <div className="form-floating mb-3">
-          <input
-            type="text"
-            className="form-control"
-            id="lastName"
-            placeholder="Last Name"
-            name="last_name"
-            required
-          />
-          <label htmlFor="lastName">Last Name</label>
+        <div className="col-md-4">
+          <div className="form-floating mb-3">
+            <input
+              type="text"
+              className="form-control"
+              id="firstName"
+              placeholder="First Name"
+              name="first_name"
+              required
+            />
+            <label htmlFor="firstName">First Name</label>
+          </div>
         </div>
-
-        <div className="form-floating mb-3">
-          <input
-            type="email"
-            className="form-control"
-            id="workEmail"
-            placeholder="Work Email"
-            name="email"
-            required
-          />
-          <label htmlFor="workEmail">Work Email</label>
+        <div className="col-md-4">
+          <div className="form-floating mb-3">
+            <input
+              type="text"
+              className="form-control"
+              id="lastName"
+              placeholder="Last Name"
+              name="last_name"
+              required
+            />
+            <label htmlFor="lastName">Last Name</label>
+          </div>
         </div>
-        <div className="form-floating mb-3">
-          <input type="hidden" value={phoneValue} name="phone" required />
-          <PhoneInputWithCountrySelect
-            // value={value}
-            // onChange={setValue}
-            onChange={(e) => setPhoneValue(e)}
-            defaultCountry="IN"
-            className="form-floating"
-            numberInputProps={{
-              className: "form-control",
-              required: true,
-              name: "phone",
-              placeholder: "Phone",
-            }}
-            limitMaxLength={15}
-            labels={"Phone Number"}
-          />
+        <div className="col-md-4">
+          <div className="form-floating mb-3">
+            <input
+              type="email"
+              className="form-control"
+              id="workEmail"
+              placeholder="Work Email"
+              name="email"
+              required
+            />
+            <label htmlFor="workEmail">Work Email</label>
+          </div>
         </div>
-        <div className="form-floating mb-3">
-          <textarea
-            className="form-control"
-            placeholder="What tasks would you like to solve?"
-            id="note"
-            name="note"
-            required
-          ></textarea>
-          <label htmlFor="note">What tasks would you like to solve?</label>
+        <div className="col-md-4">
+          <div className="form-floating mb-3">
+            <input type="hidden" value={phoneValue} name="phone" required />
+            <PhoneInputWithCountrySelect
+              // value={value}
+              // onChange={setValue}
+              onChange={(e) => setPhoneValue(e)}
+              defaultCountry="IN"
+              className="form-floating"
+              numberInputProps={{
+                className: "form-control",
+                required: true,
+                name: "phone",
+                placeholder: "Phone",
+              }}
+              limitMaxLength={15}
+              labels={"Phone Number"}
+            />
+          </div>
         </div>
-        <div className="form-floating mb-3">
-          <select
-            id="interested_in"
-            name="interested_in"
-            required
-            className="form-control"
-          >
-            <option value={""}>Show Your Interest</option>
-            {INTERESTED_IN_CHOICES?.map((choice, index) => {
-              return (
-                <option value={choice[0]} key={`iterested-choice-${index}`}>
-                  {choice[1]}
-                </option>
-              );
-            })}
-          </select>
-          <label htmlFor="interested_in">Interested In</label>
+        <div className="col-md-4">
+          <div className="form-floating mb-3">
+            <textarea
+              className="form-control"
+              placeholder="What tasks would you like to solve?"
+              id="note"
+              name="note"
+              required
+            ></textarea>
+            <label htmlFor="note">What tasks would you like to solve?</label>
+          </div>
         </div>
-        <div className="mb-3 mt-5">
-          <CustomButton title={`Book Demo`} />
+        <div className="col-md-4">
+          <div className="form-floating mb-3">
+            <select
+              id="interested_in"
+              name="interested_in"
+              required
+              className="form-control"
+            >
+              <option value={""}>Show Your Interest</option>
+              {INTERESTED_IN_CHOICES?.map((choice, index) => {
+                return (
+                  <option value={choice[0]} key={`iterested-choice-${index}`}>
+                    {choice[1]}
+                  </option>
+                );
+              })}
+            </select>
+            <label htmlFor="interested_in">Interested In</label>
+          </div>
+        </div>
+        <div className="mb-3 mt-2 d-flex justify-content-end">
+          <CustomButton title={`Connect With Us`} className="w-auto" />
         </div>
       </form>
     </>

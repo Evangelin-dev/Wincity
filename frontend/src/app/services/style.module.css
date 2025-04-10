@@ -1,0 +1,65 @@
+.service_container {
+  background: #cbcbcb;
+  padding: 5% 0;
+  color: #130032;
+}
+
+.service_item {
+  position: relative;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  color: #130032;
+}
+
+.service_item:hover::after,
+.service_item:hover::before {
+  transform: scale(1, 1);
+  color: black;
+}
+.service_item::after,
+.service_item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  transition: all 0.5s;
+}
+.service_item::after {
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  transform: scale(1, 0);
+  /* background: rgba(254, 254, 254, 0.576); */
+  color: black !important;
+}
+.service_item::before {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transform: scale(0, 1);
+  /* background: rgba(255, 255, 255, 0.576); */
+  color: black !important;
+}
+
+.section_body {
+  background-image: url("/steptodown.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  /* height: 100vh; */
+  position: relative;
+  z-index: 1;
+}
+
+.service_item_apart {
+  background: rgb(30, 23, 81);
+  border-radius: 10px;
+  color: white;
+}
+
+.service_item_apart:hover {
+  background: rgba(185, 204, 250, 0.518);
+  color: black;
+}

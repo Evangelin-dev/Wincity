@@ -3,10 +3,12 @@ import style from "./styles.module.css";
 import logoStyle from "../NavBar/styles.module.css";
 import Link from "next/link";
 import CustomButton from "../custom/CustomButton";
+import ContactUs from "../ContactUs";
 
 const Footer = () => {
   return (
     <footer className={`text-color-white footer mt-auto py-3 text-white`}>
+      <ContactUs />
       <div className="container">
         <div className="row mt-5">
           <div className="col-md-3">
@@ -43,6 +45,9 @@ const Footer = () => {
               </Link>
               <Link href={"/#contactUs"} className="py-2 text-white nav-link">
                 Contact Us
+              </Link>
+              <Link href={"/services"} className="py-2 text-white nav-link">
+                Services
               </Link>
             </div>
           </div>

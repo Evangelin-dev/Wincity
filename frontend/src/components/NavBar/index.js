@@ -7,12 +7,12 @@ import CustomButton from "../custom/CustomButton";
 export const MENU = [
   {
     name: "About Us",
-    link: "/#aboutUs",
+    link: "/about-us",
   },
-  // {
-  //   name: "Products",
-  //   link: "/",
-  // },
+  {
+    name: "Services",
+    link: "/services",
+  },
   {
     name: "Contact Us",
     link: "/#contactUs",

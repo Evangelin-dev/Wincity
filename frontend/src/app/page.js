@@ -1,8 +1,6 @@
 import Carousel from "@/components/custom/Carousel";
-import CustomButton from "@/components/custom/CustomButton";
 import CustomImage from "@/components/custom/Image";
 import style from "./style.module.css";
-import ContactUs from "@/components/ContactUs";
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const id = params.id;
@@ -20,7 +18,7 @@ export default function Home() {
       <div style={{ position: "relative" }}>
         <Carousel />
       </div>
-      <section
+      {/* <section
         className={`mb-5 mt-6 pt-6 ${style.home_scheme_section}`}
         id="aboutUs"
       >
@@ -72,41 +70,85 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className={`${style.section_body}`}>
         <div className="container">
           <div
-            className={`row border border-1 py-5 mt-5 mb-5 rounded ${style.network_hording} px-3`}
+            className={`row border border-1 py-5 mt-5 mb-5 rounded ${style.network_hording} px-3 `}
           >
-            <div className="col-md-6 d-flex align-items-center justify-content-center">
-              <h1
-                className="text-center text-black py-5 fw-bold text-white"
-                style={{ fontSize: "3rem" }}
-              >
-                Network – Hoardings{" "}
-              </h1>
-            </div>
-            <div className="col-md-6">
-              <div className="row text-start border-1 border-start">
-                <div className="col-md-12 fs-5 p-3 border-1 border-bottom">
+            <div className="col-md-6 ">
+              <div className="row text-start">
+                <div className="col-md-12 fs-5 p-3 border-1 border-bottom ">
                   <div className="rounded cursor-pointer text-white fadeIn">
                     <div>
-                      WinCity is an imitative of Lokmat Media Pvt Ltd. A perfect
-                      paradigm of versatility, established more than five
-                      decades ago providing integrated media and communication
-                      solutions across Print, Digital, OOH, Events & more.
-                      Lokmat is among the largest media groups in the country.
+                      WinCity is a flagship initiative of Lokmat Media Pvt.
+                      Ltd., a perfect paradigm of versatility in integrated
+                      media solutions. With a legacy spanning over five decades,
+                      Lokmat has grown to become one of India’s largest and most
+                      influential media groups, delivering cutting-edge services
+                      across Print, Digital, Outdoor Advertising (OOH), Event
+                      Management, Branded Content, and Communication Strategy.
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-12 fs-5 p-3 border-1 border-bottom ">
+                  <div className="rounded cursor-pointer text-white fadeIn">
+                    <div>
+                      A key contributor to this success is our associate Ronak,
+                      a seasoned expert in outdoor media execution. With
+                      hands-on experience in installing over 2,000 hoardings,
+                      bus queue shelters, pole kiosks, flag boards, and other
+                      outdoor advertising formats, Ronak brings unmatched
+                      executional excellence and industry knowledge to every
+                      campaign.
                     </div>
                   </div>
                 </div>
                 <div className="col-md-12 fs-5 p-3">
+                  <div className="rounded cursor-pointer text-white fadeIn ">
+                    <div>
+                      Whether it’s high-footfall zones in urban metros or
+                      regional hotspots, WinCity by Lokmat Media Pvt. Ltd.
+                      offers comprehensive outdoor media planning and execution
+                      services tailored for businesses looking to scale through
+                      effective location-based marketing.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 ">
+              <div className="row text-start border-1 border-start">
+                <div className="col-md-12 fs-5 p-3 border-1 border-bottom">
                   <div className="rounded cursor-pointer text-white fadeIn">
                     <div>
-                      Our associate Ronak has installed more than 2000
-                      Hoardings, Bus Q Shelters, Pole Kiosk, Flag Boards and
-                      more; constantly working on optimizing the process of site
-                      survey, obtaining approvals, procuring hardware,
-                      installation, maintenance and monetization.{" "}
+                      As a trusted name in the media landscape, Lokmat continues
+                      to set benchmarks in multi-channel communication, helping
+                      brands build presence, awareness, and engagement across
+                      platforms.
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-12 fs-5 p-3 border-1 border-bottom">
+                  <div className="rounded cursor-pointer text-white fadeIn">
+                    <div>
+                      Ronak has been instrumental in optimizing every stage of
+                      the OOH advertising lifecycle — including site surveys,
+                      municipal and government approvals, hardware procurement,
+                      installation logistics, maintenance, and advertising space
+                      monetization. His process-driven approach ensures faster
+                      turnaround, maximum visibility, and higher ROI for brands.
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-12 fs-5 p-3">
+                  <div className="rounded cursor-pointer text-white fadeIn">
+                    <div>
+                      If you're looking to expand your brand's footprint with
+                      impactful OOH advertising, hyperlocal visibility, and
+                      seamless campaign execution, WinCity is your go-to
+                      partner.
                     </div>
                   </div>
                 </div>
@@ -126,13 +168,13 @@ export default function Home() {
                 <div className="col-md-6">
                   <div className="row text-center">
                     <div className="col-md-12 fs-2 p-3">
-                      <div className="py-2 rounded cursor-pointer top_bottom_border_anim">
+                      <div className="py-2 rounded cursor-pointer top_bottom_border_anim text-white">
                         <div className="fw-bold">5 Lakhs +</div>
                         <div className="fw-normal fs-3">HNI Consumers</div>
                       </div>
                     </div>
                     <div className="col-md-12 fs-2 p-3">
-                      <div className="py-2 rounded cursor-pointer top_bottom_border_anim">
+                      <div className="py-2 rounded cursor-pointer top_bottom_border_anim text-white">
                         <div className="fw-bold">300+</div>
                         <div className="fw-normal fs-3">Gated Community</div>
                       </div>
@@ -146,89 +188,24 @@ export default function Home() {
       </section>
       <section>
         <div className={`container mt-5`}>
-          <div className={`row p-4`}>
-            <div className={`${style.importance_digital_signage} col-md-12`}>
-              <div className="row text-white">
-                <div className="col-md-12 text-center">
-                  <div className="fs-3 fw-bold pb-4">
-                    Importance of Digitals Signage
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className={` `}>
-                    <div className="fs-6 text-white fw-light">
-                      <div>
-                        Outdoor & indoor digital screens offer banks dynamic
-                        platforms for engaging customers & enhancing
-                        communication. Outdoor screens boost visibility, attract
-                        potential clients and provide real-time updates,
-                        promoting the bank’s services to a broader audience.
-                      </div>
-                      <div className="py-1">
-                        Indoor screens improve customer experience by delivering
-                        timely information and promoting relevant financial
-                        products. Together, they create a seamless & modernized
-                        environment that enhances both marketing efforts and
-                        customer satisfaction
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 d-flex align-items-center border-1 border-start">
-                  <div className={`text-white w-100`}>
-                    <div className="fs-5 text-white fw-light">
-                      <ul style={{ listStyle: "none" }}>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Increased Visibility & Brand Awareness
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Attract New Customers
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Enhanced Customer Communication
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Dynamic and Real-Time Updates
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Increased Upsell Opportunities
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Improved Customer Experience
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className={`${style.section_body}`}>
-        <div className="container">
-          <div
-            className={`row border border-1 py-5 mt-5 mb-5 rounded ${style.network_hording} px-3 text-white`}
-          >
+          <div className={`row py-5 mt-5 mb-5 px-3 text-white`}>
             <div className="row text-white mt-3">
               <div className="col-md-12 text-center">
                 <div className="fs-1 fw-bold pb-4 ">Our Capabilities</div>
               </div>
             </div>
-            <div className="row">
-              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim">
+            <div className="row d-flex flex-wrap justify-content-center">
+              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center ">
                 <div>
+                  <CustomImage
+                    src={"/icons/attract-new-customers.png"}
+                    wrapperClss="d-block w-25  cursor-pointer m-auto"
+                  />
                   <div className="fw-bold fs-4 pb-2">
                     Site Assessment and Custom Design
                   </div>
-                  <div>
-                    <ul>
+                  <div className="container-animation">
+                    <ul style={{ listStyle: "none" }}>
                       <li>
                         Conduct thorough site assessments for each branch to
                         determine optimal screen placement & size
@@ -241,25 +218,17 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 py-3 d-md-flex justify-content-center align-items-center d-none">
-                <CustomImage
-                  src={"/facilities/12708594.png"}
-                  wrapperClss="d-block w-25 tossing cursor-pointer"
-                />
-              </div>
-              <div className="col-md-6 py-3 d-md-flex justify-content-center align-items-center d-none">
-                <CustomImage
-                  src={"/facilities/17205194.png"}
-                  wrapperClss="d-block w-25 tossing cursor-pointer"
-                />
-              </div>
-              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim">
+              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center ">
                 <div>
+                  <CustomImage
+                    src={"/icons/attract-new-customers.png"}
+                    wrapperClss="d-block w-25  cursor-pointer m-auto"
+                  />
                   <div className="fw-bold fs-4 pb-2">
                     Installation and Setup
                   </div>
-                  <div>
-                    <ul>
+                  <div className="container-animation">
+                    <ul style={{ listStyle: "none" }}>
                       <li>
                         Provide end-to-end installation services, ensuring
                         screens are securely mounted & fully operational
@@ -272,13 +241,17 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim">
+              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
                 <div>
+                  <CustomImage
+                    src={"/icons/attract-new-customers.png"}
+                    wrapperClss="d-block w-25  cursor-pointer m-auto"
+                  />
                   <div className="fw-bold fs-4 pb-2">
                     Content Management System (CMS)
                   </div>
-                  <div>
-                    <ul>
+                  <div className="container-animation">
+                    <ul style={{ listStyle: "none" }}>
                       <li>
                         Implement a user-friendly CMS allowing team to easily
                         update & manage content across all branches
@@ -291,25 +264,17 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 py-3 d-md-flex justify-content-center align-items-center d-none">
-                <CustomImage
-                  src={"/facilities/3079941.png"}
-                  wrapperClss="d-block w-25 tossing cursor-pointer"
-                />
-              </div>{" "}
-              <div className="col-md-6 py-3 d-md-flex justify-content-center align-items-center d-none">
-                <CustomImage
-                  src={"/facilities/8176853.png"}
-                  wrapperClss="d-block w-25 tossing cursor-pointer"
-                />
-              </div>
-              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim">
+              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
                 <div>
+                  <CustomImage
+                    src={"/icons/attract-new-customers.png"}
+                    wrapperClss="d-block w-25  cursor-pointer m-auto"
+                  />
                   <div className="fw-bold fs-4 pb-2">
                     Ongoing Maintenance and Support:
                   </div>
-                  <div>
-                    <ul>
+                  <div className="container-animation">
+                    <ul style={{ listStyle: "none" }}>
                       <li>
                         Provide regular maintenance services to ensure all
                         screens function optimally
@@ -322,13 +287,17 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim">
+              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
                 <div>
+                  <CustomImage
+                    src={"/icons/attract-new-customers.png"}
+                    wrapperClss="d-block w-25  cursor-pointer m-auto"
+                  />
                   <div className="fw-bold fs-4 pb-2">
                     Performance Monitoring and Reporting
                   </div>
-                  <div>
-                    <ul>
+                  <div className="container-animation">
+                    <ul style={{ listStyle: "none" }}>
                       <li>
                         Deliver regular reports on screen performance,
                         engagement metrics, & content effectiveness
@@ -341,214 +310,15 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 py-3 d-md-flex justify-content-center align-items-center d-none">
-                <CustomImage
-                  src={"/facilities/13323077.png"}
-                  wrapperClss="d-block w-25 tossing cursor-pointer"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div
-            className={`row py-5 g-4 ${style.network_hording} border border-1 py-5 mt-5 mb-5 rounded`}
-          >
-            <div
-              className={`col-md-12 text-center fw-bold text-white fs-1 py-3 `}
-            >
-              Scope of Work
-            </div>
-            <div></div>
-            <div className="col-md-6 d-flex">
-              <div className={`${style.scope_of_work_item} d-flex w-100 p-2 `}>
-                <div className="w-25 text-center d-flex justify-content-center align-items-center">
-                  <span className="step fs-1 fw-bold">1</span>
-                </div>
-                <div className="w-75 text-white">
-                  <div className="fs-4 fw-bold py-2">
-                    {" "}
-                    Complete Project Planning
-                  </div>
-                  <div className="py-1">
-                    Understanding Customer’s Requirements - Sourcing/Developing
-                    Hardware
-                  </div>
-                  <div className="py-1">
-                    Software - Planning - Execution - Post installation service
-                    support
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 d-flex">
-              <div className={`${style.scope_of_work_item} d-flex w-100 p-2 `}>
-                <div className="w-25 text-center d-flex justify-content-center align-items-center">
-                  <span className="step fs-1 fw-bold">2</span>
-                </div>
-                <div className="w-75 text-white">
-                  <div className="fs-4 fw-bold py-2">Sourcing Displays</div>
-                  <div className="py-1">
-                    As per project requirement - Standard / customized
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 d-flex">
-              <div className={`${style.scope_of_work_item} d-flex w-100 p-2 `}>
-                <div className="w-25 text-center d-flex justify-content-center align-items-center">
-                  <span className="step fs-1 fw-bold">3</span>
-                </div>
-                <div className="w-75 text-white">
-                  <div className="fs-4 fw-bold py-2">Hardware Installation</div>
-                  <div className="py-1">
-                    Expert hardware installation services for seamless
-                    integration and optimal performance
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 d-flex">
-              <div className={`${style.scope_of_work_item} d-flex w-100 p-2 `}>
-                <div className="w-25 text-center d-flex justify-content-center align-items-center">
-                  <span className="step fs-1 fw-bold">4</span>
-                </div>
-                <div className="w-75 text-white">
-                  <div className="fs-4 fw-bold py-2">
-                    {" "}
-                    Asset Management & On Site Support
-                  </div>
-                  <div className="py-1">
-                    On Site support along with back-end team
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 d-flex">
-              <div className={`${style.scope_of_work_item} d-flex w-100 p-2 `}>
-                <div className="w-25 text-center d-flex justify-content-center align-items-center">
-                  <span className="step fs-1 fw-bold">5</span>
-                </div>
-                <div className="w-75 text-white">
-                  <div className="fs-4 fw-bold py-2">
-                    Content Management Solutions
-                  </div>
-                  <div className="py-1">
-                    Secure & Agile with multilayered functionalities
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 d-flex">
-              <div className={`${style.scope_of_work_item} d-flex w-100 p-2 `}>
-                <div className="w-25 text-center d-flex justify-content-center align-items-center">
-                  <span className="step fs-1 fw-bold">6</span>
-                </div>
-                <div className="w-75 text-white">
-                  <div className="fs-4 fw-bold py-2">
-                    Content Development/ Customization
-                  </div>
-                  <div className="py-1">
-                    Comprehensive content ideation to development{" "}
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
-        <div className={`container mt-5`}>
-          <div className={`row p-4`}>
-            <div className={`${style.importance_digital_signage} col-md-12`}>
-              <div className="row text-white">
-                <div className="col-md-12 text-center">
-                  <div className="fs-3 fw-bold pb-4">
-                    Content Management System
-                  </div>
-                </div>
-                <div className="col-md-12 pb-4">
-                  <div className={`text-center`}>
-                    <div className="fs-6 text-white fw-light">
-                      <div>
-                        Empowers Businesses to Efficiently Organize, Store, and
-                        Manage Digital Assets Seamlessly
-                      </div>
-                      <div className="py-1">
-                        Indoor screens improve customer experience by delivering
-                        timely information and promoting relevant financial
-                        products. Together, they create a seamless & modernized
-                        environment that enhances both marketing efforts and
-                        customer satisfaction
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 d-flex align-items-center border-1">
-                  <div className={`text-white w-100`}>
-                    <div className="fs-5 text-white fw-light">
-                      <ul style={{ listStyle: "none" }}>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Remote Management
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Centralized Control
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Scalability
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Content Scheduling
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Content Security
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 d-flex align-items-center border-1 border-start">
-                  <div className={`text-white w-100`}>
-                    <div className="fs-5 text-white fw-light">
-                      <ul style={{ listStyle: "none" }}>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Analytics and Insights
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Customized Templates
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Rights & Privileges
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Logs
-                        </li>
-                        <li>
-                          <i class="fa fa-tags me-2" aria-hidden="true"></i>{" "}
-                          Flexibility
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className={`${style.differentiator_bg} `}>
+      <section className={`${style.differentiator_bg} slid_animation`}>
         <div className="container my-5">
           <div className="row p-4">
-            <div className="col-md-12 text-center">
+            <div className="col-md-12 text-center container-animation">
               <div className="fs-1 fw-bold pb-4 text-white">
                 WinCity Differentiators
               </div>
@@ -623,8 +393,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <ContactUs />
         </div>
       </section>
     </div>
