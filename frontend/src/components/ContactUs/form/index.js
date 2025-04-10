@@ -66,7 +66,7 @@ const ContactUsForm = () => {
           <div>Contact Us !</div>
           <div className="fs-6 fw-normal">
             Got any questions about the product or scaling on our platform?
-            We're here to help. Chat to our friendly team 24/7 and get onboard
+            We`re here to help. Chat to our friendly team 24/7 and get onboard
             in less than 5 minutes.
           </div>
         </div>

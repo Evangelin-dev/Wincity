@@ -145,7 +145,7 @@ export default function Home() {
                 <div className="col-md-12 fs-5 p-3">
                   <div className="rounded cursor-pointer text-white fadeIn">
                     <div>
-                      If you're looking to expand your brand's footprint with
+                      If you`re looking to expand your brand`s footprint with
                       impactful OOH advertising, hyperlocal visibility, and
                       seamless campaign execution, WinCity is your go-to
                       partner.
