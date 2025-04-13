@@ -1,7 +1,7 @@
 .logo_img_container {
   position: relative;
   height: auto;
-  width: 15vw;
+  width: 10vw;
   margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@
 @media (max-width: 768px) {
   .logo_img_container {
     height: 5vh !important;
-    width: 10vw !important;
+    width: 25vw !important;
   }
   .bmi_img_container {
     width: 10vw !important;

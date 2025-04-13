@@ -63,11 +63,10 @@ const ContactUsForm = () => {
         <input type="hidden" value={host} name="source" />
         <input type="hidden" value={loc} name="location" />
         <div className="col-md-12 text-white py-3 fs-2 fw-bold">
-          <div>Contact Us !</div>
+          <div>Got questions about our products or want to scale with us?</div>
           <div className="fs-6 fw-normal">
-            Got any questions about the product or scaling on our platform?
-            We`re here to help. Chat to our friendly team 24/7 and get onboard
-            in less than 5 minutes.
+            We’re here to help during working hours. Reach out to our friendly
+            team — we’ll get back to you as soon as possible!
           </div>
         </div>
         <div className="col-md-4">

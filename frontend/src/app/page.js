@@ -71,85 +71,57 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-      <section className={`${style.section_body}`}>
+      {/* ${style.section_body} */}
+      <section className={``}>
         <div className="container">
           <div
             className={`row border border-1 py-5 mt-5 mb-5 rounded ${style.network_hording} px-3 `}
           >
-            <div className="col-md-6 ">
+            <div className="col-md-12">
               <div className="row text-start">
-                <div className="col-md-12 fs-5 p-3 border-1 border-bottom ">
-                  <div className="rounded cursor-pointer text-white fadeIn">
-                    <div>
-                      WinCity is a flagship initiative of Lokmat Media Pvt.
-                      Ltd., a perfect paradigm of versatility in integrated
-                      media solutions. With a legacy spanning over five decades,
-                      Lokmat has grown to become one of India’s largest and most
-                      influential media groups, delivering cutting-edge services
-                      across Print, Digital, Outdoor Advertising (OOH), Event
-                      Management, Branded Content, and Communication Strategy.
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-12 fs-5 p-3 border-1 border-bottom ">
-                  <div className="rounded cursor-pointer text-white fadeIn">
-                    <div>
-                      A key contributor to this success is our associate Ronak,
-                      a seasoned expert in outdoor media execution. With
-                      hands-on experience in installing over 2,000 hoardings,
-                      bus queue shelters, pole kiosks, flag boards, and other
-                      outdoor advertising formats, Ronak brings unmatched
-                      executional excellence and industry knowledge to every
-                      campaign.
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-12 fs-5 p-3">
-                  <div className="rounded cursor-pointer text-white fadeIn ">
-                    <div>
-                      Whether it’s high-footfall zones in urban metros or
-                      regional hotspots, WinCity by Lokmat Media Pvt. Ltd.
-                      offers comprehensive outdoor media planning and execution
-                      services tailored for businesses looking to scale through
-                      effective location-based marketing.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 ">
-              <div className="row text-start border-1 border-start">
-                <div className="col-md-12 fs-5 p-3 border-1 border-bottom">
-                  <div className="rounded cursor-pointer text-white fadeIn">
-                    <div>
-                      As a trusted name in the media landscape, Lokmat continues
-                      to set benchmarks in multi-channel communication, helping
-                      brands build presence, awareness, and engagement across
-                      platforms.
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-12 fs-5 p-3 border-1 border-bottom">
-                  <div className="rounded cursor-pointer text-white fadeIn">
-                    <div>
-                      Ronak has been instrumental in optimizing every stage of
-                      the OOH advertising lifecycle — including site surveys,
-                      municipal and government approvals, hardware procurement,
-                      installation logistics, maintenance, and advertising space
-                      monetization. His process-driven approach ensures faster
-                      turnaround, maximum visibility, and higher ROI for brands.
-                    </div>
-                  </div>
-                </div>
+                <div className="col-md-12 fs-5 p-3 border-1 border-bottom text-white">
+                  <div class="clearfix">
+                    <CustomImage
+                      src={`/banner/Achievements.webp`}
+                      wrapperClss="col-md-6 float-md-end mb-3 ms-md-3 rounded"
+                      alt="Wincity"
+                      imgClass="rounded"
+                    />
 
-                <div className="col-md-12 fs-5 p-3">
-                  <div className="rounded cursor-pointer text-white fadeIn">
-                    <div>
-                      If you`re looking to expand your brand`s footprint with
-                      impactful OOH advertising, hyperlocal visibility, and
-                      seamless campaign execution, WinCity is your go-to
-                      partner.
-                    </div>
+                    <p>
+                      <b>
+                        WinCity, a flagship initiative of Lokmat Media Pvt.
+                        Ltd., is a powerhouse in integrated outdoor media
+                        solutions.
+                      </b>
+                      Backed by the legacy of one of India’s largest and most
+                      respected media groups, WinCity brings innovation, scale,
+                      and precision to every OOH campaign—delivering visibility
+                      where it matters most.
+                    </p>
+
+                    <p>
+                      <b>
+                        With expertise across high-impact formats like
+                        hoardings, bus shelters, kiosks, and more, WinCity
+                        specializes in end-to-end outdoor advertising execution.
+                      </b>{" "}
+                      From media planning to government clearances,
+                      installation, and maintenance, every step is designed for
+                      seamless brand amplification in both urban and regional
+                      markets.
+                    </p>
+
+                    <p>
+                      <b>
+                        As Lokmat continues to lead India’s multi-channel media
+                        landscape, WinCity carries forward its vision through
+                        location-based marketing that drives results.
+                      </b>{" "}
+                      Trusted by top brands for its reach, reliability, and
+                      executional excellence, WinCity is your strategic partner
+                      for impactful OOH growth.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -157,7 +129,7 @@ export default function Home() {
 
             <div className="col-md-12 pt-5">
               <div className="row">
-                <div className="col-md-6 d-flex align-items-center border-1 border-end">
+                <div className="col-md-6 d-flex align-items-center border-md-1 border-end">
                   <h1
                     className="text-center text-black py-5 fw-bold text-white"
                     style={{ fontSize: "3rem" }}
@@ -198,21 +170,24 @@ export default function Home() {
               <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center ">
                 <div>
                   <CustomImage
-                    src={"/icons/attract-new-customers.png"}
+                    src={"/icons/assessment.png"}
                     wrapperClss="d-block w-25  cursor-pointer m-auto"
+                    alt="Site Assessment and Custom Design"
                   />
                   <div className="fw-bold fs-4 pb-2">
                     Site Assessment and Custom Design
                   </div>
-                  <div className="container-animation">
+                  <div className="">
                     <ul style={{ listStyle: "none" }}>
                       <li>
-                        Conduct thorough site assessments for each branch to
-                        determine optimal screen placement & size
+                        <b>On-Site Survey:</b> We evaluate locations to
+                        determine optimal screen size and placement for maximum
+                        visibility and impact.
                       </li>
                       <li>
-                        Design customized digital screen layouts that align with
-                        your branding and messaging needs.
+                        <b>Tailored Visual Concepts:</b> Custom-designed screen
+                        layouts that seamlessly reflect your brand identity and
+                        enhance customer engagement.
                       </li>
                     </ul>
                   </div>
@@ -221,21 +196,23 @@ export default function Home() {
               <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center ">
                 <div>
                   <CustomImage
-                    src={"/icons/attract-new-customers.png"}
+                    src={"/icons/maintainance.png"}
                     wrapperClss="d-block w-25  cursor-pointer m-auto"
                   />
                   <div className="fw-bold fs-4 pb-2">
                     Installation and Setup
                   </div>
-                  <div className="container-animation">
+                  <div className="">
                     <ul style={{ listStyle: "none" }}>
                       <li>
-                        Provide end-to-end installation services, ensuring
-                        screens are securely mounted & fully operational
+                        <b>End-to-End Installation:</b> From secure mounting to
+                        final setup—our team handles it all, ensuring a clean
+                        and professional finish.
                       </li>
                       <li>
-                        Integrate the digital signage system with your existing
-                        network infrastructure.
+                        <b>Seamless Network Integration:</b> We connect your
+                        screens to a reliable network for uninterrupted content
+                        delivery and remote access.
                       </li>
                     </ul>
                   </div>
@@ -244,21 +221,23 @@ export default function Home() {
               <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
                 <div>
                   <CustomImage
-                    src={"/icons/attract-new-customers.png"}
+                    src={"/icons/cms.png"}
                     wrapperClss="d-block w-25  cursor-pointer m-auto"
                   />
                   <div className="fw-bold fs-4 pb-2">
                     Content Management System (CMS)
                   </div>
-                  <div className="container-animation">
+                  <div className="">
                     <ul style={{ listStyle: "none" }}>
                       <li>
-                        Implement a user-friendly CMS allowing team to easily
-                        update & manage content across all branches
+                        <b>User-Friendly CMS:</b> Easily update and manage
+                        content across all screens from a single
+                        dashboard—anytime, anywhere
                       </li>
                       <li>
-                        Offer training and ongoing support to ensure seamless
-                        content management.
+                        <b>Training & Onboarding:</b> We empower your in-house
+                        team with comprehensive training and ongoing support to
+                        manage content with confidence.
                       </li>
                     </ul>
                   </div>
@@ -267,21 +246,23 @@ export default function Home() {
               <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
                 <div>
                   <CustomImage
-                    src={"/icons/attract-new-customers.png"}
+                    src={"/icons/support.png"}
                     wrapperClss="d-block w-25  cursor-pointer m-auto"
                   />
                   <div className="fw-bold fs-4 pb-2">
-                    Ongoing Maintenance and Support:
+                    Maintenance & Technical Support{" "}
                   </div>
-                  <div className="container-animation">
+                  <div className="">
                     <ul style={{ listStyle: "none" }}>
                       <li>
-                        Provide regular maintenance services to ensure all
-                        screens function optimally
+                        <b>Preventive Maintenance:</b> Routine check-ups and
+                        performance tuning to keep your digital signage running
+                        flawlessly.
                       </li>
                       <li>
-                        Offer 24/7 technical support to address any issues
-                        promptly.
+                        <b>24/7 Tech Support:</b> Our dedicated team is always
+                        on standby for fast troubleshooting and minimal
+                        downtime.
                       </li>
                     </ul>
                   </div>
@@ -290,21 +271,23 @@ export default function Home() {
               <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
                 <div>
                   <CustomImage
-                    src={"/icons/attract-new-customers.png"}
+                    src={"/icons/performance.png"}
                     wrapperClss="d-block w-25  cursor-pointer m-auto"
                   />
                   <div className="fw-bold fs-4 pb-2">
-                    Performance Monitoring and Reporting
+                    Performance Monitoring & Analytics
                   </div>
-                  <div className="container-animation">
+                  <div className="">
                     <ul style={{ listStyle: "none" }}>
                       <li>
-                        Deliver regular reports on screen performance,
-                        engagement metrics, & content effectiveness
+                        <b>Real-Time Insights:</b> Track screen uptime, content
+                        engagement, and audience metrics through advanced
+                        reporting tools.
                       </li>
                       <li>
-                        Collaborate with your marketing team to refine content
-                        strategies based on insights.
+                        <b>Actionable Reports:</b> Make data-driven decisions
+                        with detailed reports on content effectiveness and
+                        screen performance.
                       </li>
                     </ul>
                   </div>
@@ -314,14 +297,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section className={`${style.differentiator_bg} slid_animation`}>
+      <hr></hr>
+      {/* ${style.differentiator_bg} slid_animation */}
+      <section className={``}>
         <div className="container my-5">
           <div className="row p-4">
-            <div className="col-md-12 text-center container-animation">
-              <div className="fs-1 fw-bold pb-4 text-white">
-                WinCity Differentiators
-              </div>
+            <div className="col-md-12 text-center ">
+              <div className="fs-1 fw-bold pb-4 text-white">Why WinCity?</div>
             </div>
 
             <div className="col-md-12 d-flex align-items-center rounded-start">
@@ -332,13 +314,13 @@ export default function Home() {
                 >
                   <div>
                     <div className="fs-2 fw-bold">
-                      Expertise in Installation & Operation:{" "}
+                      Expertise in Installation & Operation
                     </div>
                     <div className="py-2">
-                      Team has over 10 years of experience in installing and
-                      running digital assets ensuring optimal placement,
-                      configuration, and long-term performance of digital
-                      screens
+                      With years of hands-on experience, our team ensures
+                      precise installation, optimal screen placement, and
+                      seamless configuration—guaranteeing long-term screen
+                      performance and minimal operational hassles.
                     </div>
                   </div>
                 </div>
@@ -348,28 +330,14 @@ export default function Home() {
                 >
                   <div>
                     <div className="fs-2 fw-bold">
-                      Tailored Screen Selection:
+                      Tailored Screen Selection
                     </div>
                     <div>
-                      Technology agnostic with focus on latest tech aligning
-                      with the custom requirements. Deep understanding of
-                      digital displays allows to identify and recommend the best
-                      LED screens tailored to specific needs, ensuring superior
-                      quality, durability & visibility
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className={`col-md-6 p-5 border-1 border d-flex align-items-center ${style.differentiator_item}`}
-                  style={{ height: "50vh" }}
-                >
-                  <div>
-                    <div className="fs-2 fw-bold">Comprehensive Solution:</div>
-                    <div>
-                      From initial need assessment to post-installation
-                      maintenance, we extend a complete solution, ensuring LED
-                      screens are always operating at peak performance,
-                      minimizing downtime and maximizing ROI
+                      We are technology agnostic, selecting only the most
+                      suitable and cutting-edge digital screens that align with
+                      your unique goals. Our deep understanding of display tech
+                      enables us to recommend solutions with superior quality,
+                      visibility, and durability.
                     </div>
                   </div>
                 </div>
@@ -379,14 +347,28 @@ export default function Home() {
                 >
                   <div>
                     <div className="fs-2 fw-bold">
-                      Focus on Long-Term Value:
+                      Comprehensive End-to-End Solutions
                     </div>
                     <div>
-                      By leveraging our knowledge of both the technology and the
-                      operational aspects, we help in avoiding common pitfalls
-                      in the signage industry, ensuring that they invest in
-                      high-quality digital displays that offer longevity and
-                      reliability{" "}
+                      From the initial need assessment to installation,
+                      integration, and ongoing maintenance, we deliver a
+                      complete turnkey solution. Our approach minimizes downtime
+                      and maximizes ROI by keeping your LED assets performing at
+                      their best.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className={`col-md-6 p-5 border-1 border d-flex align-items-center ${style.differentiator_item}`}
+                  style={{ height: "50vh" }}
+                >
+                  <div>
+                    <div className="fs-2 fw-bold">Focus on Long-Term Value</div>
+                    <div>
+                      We help you avoid common pitfalls in the signage industry
+                      by leveraging our combined tech and operational expertise.
+                      The result: a strategic investment in digital displays
+                      that are reliable, future-ready, and built to last.
                     </div>
                   </div>
                 </div>

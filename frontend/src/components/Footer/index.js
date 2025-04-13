@@ -79,11 +79,11 @@ const Footer = () => {
             </div>
             <div className="py-2 text-white nav-link">
               <i class="fa fa-envelope-o pe-2 fs-4" aria-hidden="true"></i>{" "}
-              <span>kiranmasoriya@wincityinfraworks.com</span>
+              <span>kiran.masoriya@wincityinfraworks.com</span>
             </div>
             <div className="py-2 text-white nav-link">
               <i class="fa fa-phone-square pe-2 fs-4" aria-hidden="true"></i>{" "}
-              +91 xxxxx xxxxx
+              022-44516981
             </div>
           </div>
         </div>

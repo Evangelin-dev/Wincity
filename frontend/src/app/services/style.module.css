@@ -1,5 +1,5 @@
 .service_container {
-  background: #cbcbcb;
+  background: #ffffff;
   padding: 5% 0;
   color: #130032;
 }
@@ -54,12 +54,12 @@
 }
 
 .service_item_apart {
-  background: rgb(30, 23, 81);
+  background: rgb(1, 0, 8);
   border-radius: 10px;
   color: white;
 }
 
 .service_item_apart:hover {
-  background: rgba(185, 204, 250, 0.518);
-  color: black;
+  background: rgba(52, 52, 52, 0.518);
+  color: rgb(255, 255, 255);
 }

@@ -101,7 +101,7 @@
 
 .differentiator_item {
   position: relative;
-  border: 1px solid #cf4c9d;
+  border: 1px solid #57e6ff;
   cursor: pointer;
 }
 
@@ -120,16 +120,16 @@
   transition: all 0.5s;
 }
 .differentiator_item::after {
-  border-right: 1px solid #cf4c9d;
-  border-left: 1px solid #cf4c9d;
+  border-right: 1px solid #57e6ff;
+  border-left: 1px solid #57e6ff;
   transform: scale(1, 0);
   background: rgba(255, 255, 255, 0.576);
-  color: #cf4c9d;
+  color: #57e6ff;
 }
 .differentiator_item::before {
-  border-top: 1px solid #cf4c9d;
-  border-bottom: 1px solid #cf4c9d;
+  border-top: 1px solid #57e6ff;
+  border-bottom: 1px solid #57e6ff;
   transform: scale(0, 1);
   background: rgba(255, 255, 255, 0.576);
-  color: #cf4c9d;
+  color: #57e6ff;
 }
