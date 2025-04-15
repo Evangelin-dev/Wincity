@@ -14,6 +14,10 @@ export const MENU = [
     link: "/services",
   },
   {
+    name: "Blogs",
+    link: "/blogs",
+  },
+  {
     name: "Contact Us",
     link: "/#contactUs",
   },

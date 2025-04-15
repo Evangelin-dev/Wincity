@@ -62,6 +62,13 @@ const ContactUsForm = () => {
       >
         <input type="hidden" value={host} name="source" />
         <input type="hidden" value={loc} name="location" />
+        <input type="hidden" value={"Other"} name="interested_in" />
+
+        <input
+          type="hidden"
+          value={process.env.NEXT_PUBLIC_CLIENT_ID}
+          name="access_key"
+        />
         <div className="col-md-12 text-white py-3 fs-2 fw-bold">
           <div>Got questions about our products or want to scale with us?</div>
           <div className="fs-6 fw-normal">
@@ -140,7 +147,7 @@ const ContactUsForm = () => {
             <label htmlFor="note">What tasks would you like to solve?</label>
           </div>
         </div>
-        <div className="col-md-4">
+        {/* <div className="col-md-4">
           <div className="form-floating mb-3">
             <select
               id="interested_in"
@@ -159,7 +166,7 @@ const ContactUsForm = () => {
             </select>
             <label htmlFor="interested_in">Interested In</label>
           </div>
-        </div>
+        </div> */}
         <div className="mb-3 mt-2 d-flex justify-content-end">
           <CustomButton title={`Connect With Us`} className="w-auto" />
         </div>

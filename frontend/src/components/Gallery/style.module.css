@@ -4,3 +4,8 @@
   width: 10vw;
   margin: 0 auto;
 }
+
+.service_gallery_img_preview {
+  height: 70vh !important;
+  /* width: 30vw !important; */
+}

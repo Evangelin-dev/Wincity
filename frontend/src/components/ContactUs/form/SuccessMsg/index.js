@@ -26,23 +26,9 @@ const SuccessMessage = () => {
             style={{
               boxShadow: "0 0 10px white !important",
               background:
-                "linear-gradient(88deg, #ffa37b -11.16%, #fa6bbe 46.95%, #732bf7 94.89%)",
+                "linear-gradient(88deg,#2e6179 -11.16%, #6dd0de 94.89%)",
             }}
           >
-            {/* <div className="modal-header justify-content-between">
-              <h5 className="modal-title" id="successMessageLabel">
-                Act Now – Offer Valid for the First 5 Exporters Only !!
-              </h5>
-              <i
-                className="fa fa-times cursor-pointer"
-                aria-hidden="true"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-                onClick={() => {
-                  localStorage.setItem("pop-closed", new Date().toString());
-                }}
-              ></i>
-            </div> */}
             <div className="modal-body text-center text-white">
               <div className="fs-1 text-success p-3">
                 <span className="step">
