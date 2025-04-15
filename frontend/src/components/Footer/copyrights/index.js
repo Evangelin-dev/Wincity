@@ -3,10 +3,16 @@ import Link from "next/link";
 const FooterCopyRights = () => {
   return (
     <div className="d-flex justify-content-between w-100">
-      <div>© 2024 WinCity InfraWorks LLP.</div>
+      <div>© {new Date().getFullYear()} WinCity InfraWorks LLP.</div>
       <div>
-        Designed & Developed BY{" "}
-        <Link href={`https://botdigitalsolutions.com/`}>TheBot</Link>
+        Designed & Developed BY
+        <Link
+          className="text-white mx-2 text-decoration-underline"
+          href={`https://botdigitalsolutions.com/`}
+          target="_blank"
+        >
+          TheBot
+        </Link>
       </div>
     </div>
   );
