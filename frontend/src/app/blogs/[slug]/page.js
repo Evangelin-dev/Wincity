@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./styles.module.css";
 import CustomImage from "@/components/custom/Image";
 
@@ -39,7 +40,7 @@ const BlogDetailsPage = async ({ params }) => {
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="/blogs">Blogs</a>
+                <Link href="/blogs">Blogs</Link>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 {slug}
