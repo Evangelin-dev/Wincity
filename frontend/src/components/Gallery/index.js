@@ -5,7 +5,7 @@ import CustomImage from "../custom/Image";
 import style from "./style.module.css";
 
 const ServiceGallery = () => {
-  const [selectedImg, setSelectedImg] = useState(`/gallery/laboratory.png`);
+  const [selectedImg, setSelectedImg] = useState(`/gallery/gallery-1.jpeg`);
 
   const scrollRef = useRef();
 

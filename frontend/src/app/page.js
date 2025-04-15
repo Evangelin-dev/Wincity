@@ -79,7 +79,7 @@ export default function Home() {
           >
             <div className="col-md-12">
               <div className="row text-start">
-                <div className="col-md-12 fs-5 p-3 border-1 border-bottom text-white">
+                <div className="col-md-12 fs-5 p-3 text-white">
                   <div class="clearfix">
                     <CustomImage
                       src={`/banner/Achievements.webp`}
@@ -127,7 +127,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-md-12 pt-5">
+            {/* <div className="col-md-12 pt-5">
               <div className="row">
                 <div className="col-md-6 d-flex align-items-center border-md-1 border-end">
                   <h1
@@ -154,7 +154,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
