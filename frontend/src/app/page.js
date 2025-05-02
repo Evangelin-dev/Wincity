@@ -92,9 +92,9 @@ export default function Home() {
                       <b>
                         WinCity, a flagship initiative of Lokmat Media Pvt.
                         Ltd., is a powerhouse in integrated outdoor media
-                        solutions.
+                        solutions.{" "}
                       </b>
-                      Backed by the legacy of one of India’s largest and most
+                       Backed by the legacy of one of India’s largest and most
                       respected media groups, WinCity brings innovation, scale,
                       and precision to every OOH campaign—delivering visibility
                       where it matters most.
@@ -102,14 +102,13 @@ export default function Home() {
 
                     <p>
                       <b>
-                        With expertise across high-impact formats like
-                        hoardings, bus shelters, kiosks, and more, WinCity
-                        specializes in end-to-end outdoor advertising execution.
+                      With expertise across high-impact formats like digital Digital Signage 
+                      name boards, hoardings, kiosks, and more, WinCity specializes 
+                      in end-to-end outdoor integrated outdoor media solutions. 
                       </b>{" "}
-                      From media planning to government clearances,
-                      installation, and maintenance, every step is designed for
-                      seamless brand amplification in both urban and regional
-                      markets.
+                      From site recce to infrastructure planning, installation, 
+                      and maintenance, every step is crafted to ensure seamless 
+                      brand amplification across both urban and regional markets.
                     </p>
 
                     <p>
@@ -180,12 +179,12 @@ export default function Home() {
                   <div className="">
                     <ul style={{ listStyle: "none" }}>
                       <li>
-                        <b>On-Site Survey:</b> We evaluate locations to
-                        determine optimal screen size and placement for maximum
-                        visibility and impact.
+                        <b>On-Site Survey:</b> We evaluate locations to determine Optimal 
+                        placement and size for your digital signage solutions, 
+                        ensuring maximum visibility and impact.
                       </li>
                       <li>
-                        <b>Tailored Visual Concepts:</b> Custom-designed screen
+                        <b>Tailored Visual Concepts:</b> Custom-designed 
                         layouts that seamlessly reflect your brand identity and
                         enhance customer engagement.
                       </li>
@@ -210,9 +209,9 @@ export default function Home() {
                         and professional finish.
                       </li>
                       <li>
-                        <b>Seamless Network Integration:</b> We connect your
-                        screens to a reliable network for uninterrupted content
-                        delivery and remote access.
+                        <b>Seamless Network Integration:</b> We connect your digital 
+                        signage solutions with a reliable network for uninterrupted 
+                        remote content delivery and management.
                       </li>
                     </ul>
                   </div>
@@ -235,9 +234,8 @@ export default function Home() {
                         dashboard—anytime, anywhere
                       </li>
                       <li>
-                        <b>Training & Onboarding:</b> We empower your in-house
-                        team with comprehensive training and ongoing support to
-                        manage content with confidence.
+                        <b>Training & Onboarding:</b> We empower your in-house team with comprehensive 
+                        training and continues support to manage content.
                       </li>
                     </ul>
                   </div>
@@ -260,7 +258,7 @@ export default function Home() {
                         flawlessly.
                       </li>
                       <li>
-                        <b>24/7 Tech Support:</b> Our dedicated team is always
+                        <b>Prompt Tech Support:</b> Our dedicated team is always
                         on standby for fast troubleshooting and minimal
                         downtime.
                       </li>
@@ -353,7 +351,7 @@ export default function Home() {
                       From the initial need assessment to installation,
                       integration, and ongoing maintenance, we deliver a
                       complete turnkey solution. Our approach minimizes downtime
-                      and maximizes ROI by keeping your LED assets performing at
+                      and maximizes ROI by keeping your Digital Signage assets performing at
                       their best.
                     </div>
                   </div>

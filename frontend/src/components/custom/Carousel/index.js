@@ -24,11 +24,10 @@ const Carousel = () => {
               class={`text-white position-absolute ${style.carousel_caption} start-0 fs-4 border border-1 w-auto p-5 rounded`}
             >
               <div className={`${style.caption_title}`}>
-                For Over 50 Years, We’ve Turned Vision into Visibility.
+              For Over 50 Years, 
               </div>
               <div className={`${style.caption_sub_title}`}>
-                Catchy and resonates well with Print/Events/Digital Media/OOH
-                Media.
+              Our leadership team has turned vision into visibility. Resonating across Print/Events/Digital Media/OOH Media.
               </div>
             </div>
           </div>

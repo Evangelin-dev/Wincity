@@ -18,7 +18,7 @@ const AboutUs = () => {
               <div>
                 <div className="fs-3 fw-bold">Deployment Strategy</div>
                 <div className="fs-5 fw-normal pb-2">
-                  Complete, hassle-free deployment of digital signage systems
+                Complete, hassle-free deployment of DSS
                 </div>
 
                 <div>
@@ -34,8 +34,7 @@ const AboutUs = () => {
                   <div className="fw-bold">Secure Mounting & Configuration</div>
                   <ul>
                     <li>
-                      Precision screen installation with reliable mounting and
-                      optimal configuration.
+                    Precise screen installation with reliable mounting and optimal configuration.
                     </li>
                   </ul>
                 </div>
@@ -43,8 +42,7 @@ const AboutUs = () => {
                   <div className="fw-bold">System Integration</div>
                   <ul>
                     <li>
-                      Seamless setup with your existing IT & network
-                      infrastructure for uninterrupted operation.
+                    Seamless setup of99 IT & network infrastructure for uninterrupted operation.
                     </li>
                   </ul>
                 </div>
@@ -195,11 +193,10 @@ const AboutUs = () => {
                   </ul>
                 </div>
                 <div>
-                  <div className="fw-bold">24/7 Technical Assistance</div>
+                  <div className="fw-bold">Technical Assistance</div>
                   <ul>
                     <li>
-                      Around-the-clock support to quickly resolve hardware and
-                      software issues.
+                    Prompt support to quickly resolve hardware and software issues.
                     </li>
                   </ul>
                 </div>
@@ -220,7 +217,7 @@ const AboutUs = () => {
           <div className="row">
             <div className="col-md-6 d-flex align-items-center">
               <div>
-                <div className="fs-3 fw-bold">Content Operations</div>
+                <div className="fs-3 fw-bold">Content Management</div>
                 <div className="fs-5 fw-normal pb-2">
                   Simple yet powerful tools to control and manage screen content
                 </div>
@@ -340,8 +337,7 @@ const AboutUs = () => {
                       </div>
                       <div>
                         With over years of industry experience, our team excels
-                        in the installation and management of digital signage
-                        systems. We ensure precise screen placement, optimized
+                        in the installation and management of digital systems. We ensure precise screen placement, optimized
                         configuration, and smooth operations—guaranteeing
                         maximum visual impact and performance efficiency from
                         day one.
@@ -376,8 +372,8 @@ const AboutUs = () => {
                           <li>Site assessment</li>
                           <li>Hardware installation</li>
                           <li>Network integration</li>
-                          <li>Content deployment</li>
-                          <li>24/7 monitoring & support</li>
+                          <li>Content management </li>
+                          <li>Monitoring & support</li>
                         </ul>
                       </div>
                       <div>

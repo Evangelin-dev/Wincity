@@ -72,8 +72,8 @@ const ContactUsForm = () => {
         <div className="col-md-12 text-white py-3 fs-2 fw-bold">
           <div>Got questions about our products or want to scale with us?</div>
           <div className="fs-6 fw-normal">
-            We’re here to help during working hours. Reach out to our friendly
-            team — we’ll get back to you as soon as possible!
+          Take the first step to convert your vision into visibility. 
+          Reach out to our friendly team — we’ll get back to you as soon as possible!
           </div>
         </div>
         <div className="col-md-4">
@@ -144,7 +144,7 @@ const ContactUsForm = () => {
               name="note"
               required
             ></textarea>
-            <label htmlFor="note">What tasks would you like to solve?</label>
+            <label htmlFor="note">Type your Message here….</label>
           </div>
         </div>
         {/* <div className="col-md-4">
