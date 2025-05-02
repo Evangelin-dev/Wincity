@@ -19,10 +19,10 @@ const content = `<p class="p1"><strong>Effective Date:</strong> April 15, 2025</
 <p class="p1"><strong>3. Sharing Your Information</strong></p>
 <p class="p1">We do not sell, trade, or rent your personal information to third parties. We may share your information with trusted third-party service providers who assist us in operating our website and conducting our business, provided they agree to keep your information confidential.</p>
 </ul>
-<ul class="ul1">
-<li class="li1"><strong>Legal Obligations: </strong>Governmental, administrative, regulatory, or judicial authorities as required by law or in connection with legal proceedings.</li>
 
-</ul>
+<p class="p1"><strong>Legal Obligations: </strong>Governmental, administrative, regulatory, or judicial authorities as required by law or in connection with legal proceedings.</p>
+
+
 <p class="p1"><strong>4. Data Security</strong></p>
 <p class="p1">We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet is entirely secure, and we cannot guarantee absolute security.</p>
 <p class="p1"><strong>5. Your Rights</strong></p>
