@@ -6,7 +6,7 @@ import ServiceGallery from "@/components/Gallery";
 const AboutUs = () => {
   return (
     <div>
-      <CommonBanner
+      <CommonBanner enableBlur={true}
         title="Our Services"
         subTitle="At WinCity InfraWorks LLP, we offer a full spectrum of digital signage and display solutions, designed to deliver long-term value and uninterrupted performance."
       />
@@ -14,7 +14,8 @@ const AboutUs = () => {
       <section className={`${style.service_container}`}>
         <div className="container">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+          <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
+
               <div>
                 <div className="fs-3 fw-bold">Deployment Strategy</div>
                 <div className="fs-5 fw-normal pb-2">
@@ -57,7 +58,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 order-1 order-md-2">
               <div
                 id="deployementStrategy"
                 className="carousel slide"
@@ -116,7 +117,7 @@ const AboutUs = () => {
           <hr></hr>
 
           <div className="row">
-            <div className="col-md-6">
+          <div className="col-md-6 order-1 order-md-1">
               <div
                 id="operationalUptimeManagement"
                 className="carousel slide"
@@ -172,7 +173,7 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 d-flex align-items-center order-2 order-md-2">
               <div>
                 <div className="fs-3 fw-bold">
                   Operational Uptime Management
@@ -215,7 +216,7 @@ const AboutUs = () => {
           <hr></hr>
 
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+          <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
               <div>
                 <div className="fs-3 fw-bold">Content Management</div>
                 <div className="fs-5 fw-normal pb-2">
@@ -251,7 +252,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 order-1 order-md-2">
               <div
                 id="contentOperation"
                 className="carousel slide"
