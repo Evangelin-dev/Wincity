@@ -72,12 +72,13 @@ const AboutUs = () => {
                   </div>
                 </div>
               </div>
-              <div className={`col-md-6 d-md-flex align-items-center d-none`}>
-                <CustomImage
-                  src={`/about-us/2151913709.png`}
-                  imgClass="rounded"
-                />
-              </div>
+              <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
+  <CustomImage
+    src="/about-us/2151913709.png"
+    imgClass="img-fluid w-100 object-fit-cover rounded"
+  />
+</div>
+
             </div>
             <div className="col-md-12 py-5 text-center fs-2">
               <b>At WinCity</b>, we go beyond just display spaces—we offer a
