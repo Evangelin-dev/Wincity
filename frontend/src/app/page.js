@@ -166,131 +166,136 @@ export default function Home() {
               </div>
             </div>
             <div className="row d-flex flex-wrap justify-content-center">
-              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center ">
-                <div>
-                  <CustomImage
-                    src={"/icons/assessment.png"}
-                    wrapperClss="d-block w-25  cursor-pointer m-auto"
-                    alt="Site Assessment and Custom Design"
-                  />
-                  <div className="fw-bold fs-4 pb-2">
-                    Site Assessment and Custom Design
-                  </div>
-                  <div className="">
-                    <ul style={{ listStyle: "none" }}>
-                      <li>
-                        <b>On-Site Survey:</b> We evaluate locations to determine Optimal 
-                        placement and size for your digital signage solutions, 
-                        ensuring maximum visibility and impact.
-                      </li>
-                      <li>
-                        <b>Tailored Visual Concepts:</b> Custom-designed 
-                        layouts that seamlessly reflect your brand identity and
-                        enhance customer engagement.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center ">
-                <div>
-                  <CustomImage
-                    src={"/icons/maintainance.png"}
-                    wrapperClss="d-block w-25  cursor-pointer m-auto"
-                  />
-                  <div className="fw-bold fs-4 pb-2">
-                    Installation and Setup
-                  </div>
-                  <div className="">
-                    <ul style={{ listStyle: "none" }}>
-                      <li>
-                        <b>End-to-End Installation:</b> From secure mounting to
-                        final setup—our team handles it all, ensuring a clean
-                        and professional finish.
-                      </li>
-                      <li>
-                        <b>Seamless Network Integration:</b> We connect your digital 
-                        signage solutions with a reliable network for uninterrupted 
-                        remote content delivery and management.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
-                <div>
-                  <CustomImage
-                    src={"/icons/cms.png"}
-                    wrapperClss="d-block w-25  cursor-pointer m-auto"
-                  />
-                  <div className="fw-bold fs-4 pb-2">
-                    Content Management System (CMS)
-                  </div>
-                  <div className="">
-                    <ul style={{ listStyle: "none" }}>
-                      <li>
-                        <b>User-Friendly CMS:</b> Easily update and manage
-                        content across all screens from a single
-                        dashboard—anytime, anywhere
-                      </li>
-                      <li>
-                        <b>Training & Onboarding:</b> We empower your in-house team with comprehensive 
-                        training and continues support to manage content.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
-                <div>
-                  <CustomImage
-                    src={"/icons/support.png"}
-                    wrapperClss="d-block w-25  cursor-pointer m-auto"
-                  />
-                  <div className="fw-bold fs-4 pb-2">
-                    Maintenance & Technical Support{" "}
-                  </div>
-                  <div className="">
-                    <ul style={{ listStyle: "none" }}>
-                      <li>
-                        <b>Preventive Maintenance:</b> Routine check-ups and
-                        performance tuning to keep your digital signage running
-                        flawlessly.
-                      </li>
-                      <li>
-                        <b>Prompt Tech Support:</b> Our dedicated team is always
-                        on standby for fast troubleshooting and minimal
-                        downtime.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
-                <div>
-                  <CustomImage
-                    src={"/icons/performance.png"}
-                    wrapperClss="d-block w-25  cursor-pointer m-auto"
-                  />
-                  <div className="fw-bold fs-4 pb-2">
-                    Performance Monitoring & Analytics
-                  </div>
-                  <div className="">
-                    <ul style={{ listStyle: "none" }}>
-                      <li>
-                        <b>Real-Time Insights:</b> Track screen uptime, content
-                        engagement, and audience metrics through advanced
-                        reporting tools.
-                      </li>
-                      <li>
-                        <b>Actionable Reports:</b> Make data-driven decisions
-                        with detailed reports on content effectiveness and
-                        screen performance.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+            <div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
+  <div>
+    <CustomImage
+      src={"/icons/assessment.png"}
+      wrapperClss="d-block w-25 cursor-pointer m-auto"
+      alt="Site Assessment and Custom Design"
+    />
+    <div className="fw-bold fs-4 pb-2">
+      Site Assessment and Custom Design
+    </div>
+    <div>
+      <ul style={{ listStyle: "none" }} className="text-center p-0">
+        <li>
+          <b>On-Site Survey:</b> We evaluate locations to determine optimal
+          placement and size for your digital signage solutions,
+          ensuring maximum visibility and impact.
+        </li>
+        <li className="pt-2">
+          <b>Tailored Visual Concepts:</b> Custom-designed
+          layouts that seamlessly reflect your brand identity and
+          enhance customer engagement.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
+  <div>
+    <CustomImage
+      src={"/icons/maintainance.png"}
+      wrapperClss="d-block w-25 cursor-pointer m-auto"
+    />
+    <div className="fw-bold fs-4 pb-2">
+      Installation and Setup
+    </div>
+    <div>
+      <ul style={{ listStyle: "none" }} className="text-center p-0">
+        <li>
+          <b>End-to-End Installation:</b> From secure mounting to
+          final setup—our team handles it all, ensuring a clean
+          and professional finish.
+        </li>
+        <li className="pt-2">
+          <b>Seamless Network Integration:</b> We connect your digital 
+          signage solutions with a reliable network for uninterrupted 
+          remote content delivery and management.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
+  <div>
+    <CustomImage
+      src={"/icons/cms.png"}
+      wrapperClss="d-block w-25 cursor-pointer m-auto"
+    />
+    <div className="fw-bold fs-4 pb-2">
+      Content Management System (CMS)
+    </div>
+    <div>
+      <ul style={{ listStyle: "none" }} className="text-center p-0">
+        <li>
+          <b>User-Friendly CMS:</b> Easily update and manage
+          content across all screens from a single
+          dashboard—anytime, anywhere.
+        </li>
+        <li className="pt-2">
+          <b>Training & Onboarding:</b> We empower your in-house team with comprehensive 
+          training and continuous support to manage content.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
+  <div>
+    <CustomImage
+      src={"/icons/support.png"}
+      wrapperClss="d-block w-25 cursor-pointer m-auto"
+    />
+    <div className="fw-bold fs-4 pb-2">
+      Maintenance & Technical Support
+    </div>
+    <div>
+      <ul style={{ listStyle: "none" }} className="text-center p-0">
+        <li>
+          <b>Preventive Maintenance:</b> Routine check-ups and
+          performance tuning to keep your digital signage running
+          flawlessly.
+        </li>
+        <li className="pt-2">
+          <b>Prompt Tech Support:</b> Our dedicated team is always
+          on standby for fast troubleshooting and minimal
+          downtime.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div className="col-md-6 py-3 d-flex justify-content-center align-items-center top_bottom_border_anim text-center">
+  <div>
+    <CustomImage
+      src={"/icons/performance.png"}
+      wrapperClss="d-block w-25 cursor-pointer m-auto"
+    />
+    <div className="fw-bold fs-4 pb-2">
+      Performance Monitoring & Analytics
+    </div>
+    <div>
+      <ul style={{ listStyle: "none" }} className="text-center p-0">
+        <li>
+          <b>Real-Time Insights:</b> Track screen uptime, content
+          engagement, and audience metrics through advanced
+          reporting tools.
+        </li>
+        <li className="pt-2">
+          <b>Actionable Reports:</b> Make data-driven decisions
+          with detailed reports on content effectiveness and
+          screen performance.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
             </div>
           </div>
         </div>

@@ -19,7 +19,8 @@ const AboutUs = () => {
               <div>
                 <div className="fs-3 fw-bold">Deployment Strategy</div>
                 <div className="fs-5 fw-normal pb-2">
-                Complete, hassle-free deployment of DSS
+                Complete, hassle-free deployment of DSS(Digital Signage Solution)
+
                 </div>
 
                 <div>
@@ -43,7 +44,7 @@ const AboutUs = () => {
                   <div className="fw-bold">System Integration</div>
                   <ul>
                     <li>
-                    Seamless setup of99 IT & network infrastructure for uninterrupted operation.
+                    Seamless setup of IT & network infrastructure for uninterrupted operation.
                     </li>
                   </ul>
                 </div>
@@ -70,7 +71,7 @@ const AboutUs = () => {
                     data-bs-interval="10000"
                   >
                     <CustomImage
-                      src={`/services/deployment-strategy/deployement-strategy.avif`}
+                      src={`/services/deployment-strategy/deployement-strategy.jpg`}
                       wrapperClss="d-block w-100"
                     />
                   </div>
@@ -337,11 +338,11 @@ const AboutUs = () => {
                         🛠️ Proven Expertise in Installation & Operations
                       </div>
                       <div>
-                        With over years of industry experience, our team excels
-                        in the installation and management of digital systems. We ensure precise screen placement, optimized
-                        configuration, and smooth operations—guaranteeing
-                        maximum visual impact and performance efficiency from
-                        day one.
+                      With over years of industry experience, our team excels in 
+                      the installation and management of digital signage solutions. 
+                      We ensure precise screen placement, optimized configuration, 
+                      and smooth operations—guaranteeing maximum visual impact and 
+                      performance efficiency from day one.
                       </div>
                     </p>
 

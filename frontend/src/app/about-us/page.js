@@ -24,13 +24,14 @@ const AboutUs = () => {
               <div className="col-md-6 d-flex align-items-center">
                 <div>
                   <div className="fs-5 fw-light py-2  ">
-                    Keep Integrated Digital Media and infrastructure
-                    solutions provider. Backed by the legacy and strength of
-                    Lokmat Media Pvt. Ltd., one of India’s largest regional
-                    print media houses and the leading Marathi publication
-                    group, WinCity has emerged as a powerful player in the
-                    Out-of-Home (OOH) advertising, digital signage, and
-                    content-driven display solutions space.
+                  WinCity InfraWorks LLP, an initiative of Lokmat Media, 
+                  is a forward-thinking Integrated Digital Media and infrastructure 
+                  solutions provider. Backed by the legacy and strength of Lokmat Media Pvt. Ltd., 
+                  one of India’s largest regional print media houses and the leading Marathi 
+                  publication group, WinCity has emerged as a powerful player in the 
+                  Out-of-Home (OOH) advertising, digital signage, and content-driven display 
+                  solutions space.
+
                   </div>
 
                   <div className="fs-5 fw-light py-2  ">
