@@ -39,7 +39,7 @@ const content = `<p class="p1"><strong>Effective Date:</strong> April 15, 2025</
 <p class="p1">We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
 <p class="p1"><strong>8. Contact Us</strong></p>
 <p class="p1">If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
-<p class="p1"><strong>Email:</strong> kiran.masoriya@wincityinfraworks.com<br /> <strong>Phone:</strong> 022-44516981</p>`;
+<p class="p1"><strong>Email:</strong> admin@wincityinfraworks.com<br /> <strong>Phone:</strong> 022-44516981</p>`;
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const id = params.id;
