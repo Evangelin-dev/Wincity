@@ -24,7 +24,7 @@ const AboutUs = () => {
                 </div>
 
                 <div>
-                  <div className="fw-bold">Site Inspection : </div>
+                  <div className="fw-bold">Site Inspection </div>
                   <ul>
                     <li>
                       Evaluate and identify ideal screen locations for maximum
@@ -185,7 +185,7 @@ const AboutUs = () => {
 
                 <div>
                   <div className="fw-bold">
-                    Scheduled Preventive Maintenance :{" "}
+                    Scheduled Preventive Maintenance {" "}
                   </div>
                   <ul>
                     <li>
@@ -225,7 +225,7 @@ const AboutUs = () => {
                 </div>
 
                 <div>
-                  <div className="fw-bold">Intuitive CMS Interface : </div>
+                  <div className="fw-bold">Intuitive CMS Interface </div>
                   <ul>
                     <li>
                       Easy-to-use platform for managing content across multiple

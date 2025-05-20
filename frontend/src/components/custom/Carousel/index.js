@@ -24,7 +24,7 @@ const Carousel = () => {
               class={`text-white position-absolute ${style.carousel_caption} start-0 fs-4 border border-1 w-auto p-5 rounded`}
             >
               <div className={`${style.caption_title}`}>
-              For Over 50 Years, 
+              For Over 50 Years 
               </div>
               <div className={`${style.caption_sub_title}`}>
               Our leadership team has turned vision into visibility. Resonating across Print/Events/Digital Media/OOH Media.
@@ -34,6 +34,7 @@ const Carousel = () => {
         </div>
         <div class="carousel-item" data-bs-interval="2000">
           <div className="row position-relative">
+            <div className="col-md-4"></div>
             <div className="col-md-8">
               <CustomImage
                 src={`/banner/banner-2.jpg`}
@@ -41,17 +42,16 @@ const Carousel = () => {
                 imgClass="rounded"
               />
             </div>
-            <div className="col-md-4"></div>
+            
 
             <div
-              class={`text-white position-absolute ${style.carousel_caption} end-0 fs-4 border border-1 w-auto p-5 rounded`}
+              class={`text-white position-absolute ${style.carousel_caption} start-0 fs-4 border border-1 w-auto p-5 rounded`}
             >
               <div className={`${style.caption_title}`}>
-                For Over 50 Years, We’ve Turned Vision into Visibility.
+                For Over 50 Years 
               </div>
               <div className={`${style.caption_sub_title}`}>
-                Catchy and resonates well with Print/Events/Digital Media/OOH
-                Media.
+                Our leadership team has turned vision into visibility. Resonating across Print/Events/Digital Media/OOH Media.
               </div>
             </div>
           </div>
@@ -72,11 +72,13 @@ const Carousel = () => {
               class={`text-white position-absolute ${style.carousel_caption} start-0 fs-4 border border-1 w-auto p-5 rounded`}
             >
               <div className={`${style.caption_title}`}>
-                For Over 50 Years, We’ve Turned Vision into Visibility.
+                {/* For Over 50 Years, We’ve Turned Vision into Visibility. */}
+                For Over 50 Years 
               </div>
               <div className={`${style.caption_sub_title}`}>
-                Catchy and resonates well with Print/Events/Digital Media/OOH
-                Media.
+                {/* Catchy and resonates well with Print/Events/Digital Media/OOH
+                Media. */}
+                Our leadership team has turned vision into visibility. Resonating across Print/Events/Digital Media/OOH Media.
               </div>
             </div>
           </div>

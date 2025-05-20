@@ -102,13 +102,11 @@ export default function Home() {
 
                     <p>
                       <b>
-                      With expertise across high-impact formats like digital Digital Signage 
-                      name boards, hoardings, kiosks, and more, WinCity specializes 
-                      in end-to-end outdoor integrated outdoor media solutions. 
+                      With expertise across high-impact formats like digital signage name boards, 
+                      hoardings, kiosks, and more, WinCity specializes in end-to-end outdoor integrated media solutions.
                       </b>{" "}
-                      From site recce to infrastructure planning, installation, 
-                      and maintenance, every step is crafted to ensure seamless 
-                      brand amplification across both urban and regional markets.
+                      From site recce to infrastructure planning, installation, and maintenance, 
+                      every step is crafted to ensure seamless brand amplification across both urban and regional markets.
                     </p>
 
                     <p>
@@ -313,17 +311,18 @@ export default function Home() {
               <div className="row text-white text-center">
                 <div
                   className={`col-md-6 p-5 border-1 border d-flex align-items-center ${style.differentiator_item}`}
-                  style={{ height: "50vh", borderColor: "#cf4c9d" }}
+                  style={{ height: "50vh" }}
                 >
                   <div>
                     <div className="fs-2 fw-bold">
-                      Expertise in Installation & Operation
+                      Comprehensive End-to-End Solutions
                     </div>
-                    <div className="py-2">
-                      With years of hands-on experience, our team ensures
-                      precise installation, optimal screen placement, and
-                      seamless configuration—guaranteeing long-term screen
-                      performance and minimal operational hassles.
+                    <div>
+                      From the initial need assessment to installation,
+                      integration, and ongoing maintenance, we deliver a
+                      complete turnkey solution. Our approach minimizes downtime
+                      and maximizes ROI by keeping your Digital Signage assets performing at
+                      their best.
                     </div>
                   </div>
                 </div>
@@ -346,21 +345,21 @@ export default function Home() {
                 </div>
                 <div
                   className={`col-md-6 p-5 border-1 border d-flex align-items-center ${style.differentiator_item}`}
-                  style={{ height: "50vh" }}
-                >
+                  style={{ height: "50vh", borderColor: "#cf4c9d" }}
+                 >
                   <div>
                     <div className="fs-2 fw-bold">
-                      Comprehensive End-to-End Solutions
+                      Expertise in Installation & Operation
                     </div>
-                    <div>
-                      From the initial need assessment to installation,
-                      integration, and ongoing maintenance, we deliver a
-                      complete turnkey solution. Our approach minimizes downtime
-                      and maximizes ROI by keeping your Digital Signage assets performing at
-                      their best.
+                    <div className="py-2">
+                      With years of hands-on experience, our team ensures
+                      precise installation, optimal screen placement, and
+                      seamless configuration—guaranteeing long-term screen
+                      performance and minimal operational hassles.
                     </div>
                   </div>
                 </div>
+                
                 <div
                   className={`col-md-6 p-5 border-1 border d-flex align-items-center ${style.differentiator_item}`}
                   style={{ height: "50vh" }}
