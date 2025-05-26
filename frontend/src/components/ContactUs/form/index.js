@@ -3,18 +3,30 @@ import CustomButton from "@/components/custom/CustomButton";
 import { useEffect, useState } from "react";
 import SuccessMessage from "./SuccessMsg";
 import "react-phone-number-input/style.css";
-
 import PhoneInputWithCountrySelect from "react-phone-number-input";
-
-const INTERESTED_IN_CHOICES = [["Other", "Other"]];
 
 const ContactUsForm = () => {
   const [loc, setLoc] = useState("");
   const [loader, setLoader] = useState(false);
   const [host, setHost] = useState("");
   const [phoneValue, setPhoneValue] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const isNameValid = (name) => /^[A-Za-z]*$/.test(name);
+  const isPhoneValid = /^\d{13}$/.test(phoneValue?.replace(/\D/g, ""));
+  const isEmailValid = emailRegex.test(email);
 
   const saveContactUs = async (e) => {
+    e.preventDefault();
+
+    if (!isPhoneValid) {
+      alert("Phone number must be exactly 10 digits");
+      return;
+    }
+
     setLoader(true);
     const formData = new FormData(e.target);
     fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/lead-generate/`, {
@@ -22,60 +34,53 @@ const ContactUsForm = () => {
       body: formData,
     })
       .then((response) => response.json())
-      .then((result) => {
+      .then(() => {
         document.getElementById("contact-us-form").reset();
         document.getElementById("success-msg-modal-btn").click();
         setLoader(false);
+        setPhoneValue("");
+        setFirstName("");
+        setLastName("");
+        setEmail("");
       })
-      .catch((error) => {
+      .catch(() => {
         setLoader(false);
-        document.getElementById("contact-us-form").reset();
-        alert("Something went wrong, will keep in touch with you !");
+        alert("Something went wrong, will keep in touch with you!");
       });
   };
 
   return (
     <>
       {loader && (
-        <div
-          id="spinner-div"
-          className="pt-5 pt-5 d-flex align-items-center justify-content-center"
-        >
-          <div className="d-flex align-items-center">
-            <div
-              className="spinner-border ms-auto"
-              role="status"
-              aria-hidden="true"
-            ></div>
-          </div>
+        <div className="pt-5 d-flex align-items-center justify-content-center">
+          <div className="spinner-border" role="status" aria-hidden="true"></div>
         </div>
       )}
 
       <SuccessMessage />
       <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          saveContactUs(e);
-        }}
+        onSubmit={saveContactUs}
         id="contact-us-form"
         className="d-flex flex-wrap align-items-center row"
       >
         <input type="hidden" value={host} name="source" />
         <input type="hidden" value={loc} name="location" />
-        <input type="hidden" value={"Other"} name="interested_in" />
-
+        <input type="hidden" value="Other" name="interested_in" />
         <input
           type="hidden"
           value={process.env.NEXT_PUBLIC_CLIENT_ID}
           name="access_key"
         />
+
         <div className="col-md-12 text-white py-3 fs-2 fw-bold">
           <div>Got questions about our products or want to scale with us?</div>
           <div className="fs-6 fw-normal">
-            We’re here to help during working hours. Reach out to our friendly
-            team — we’ll get back to you as soon as possible!
+            Take the first step to convert your vision into visibility. Reach
+            out to our friendly team — we’ll get back to you as soon as
+            possible!
           </div>
         </div>
+
         <div className="col-md-4">
           <div className="form-floating mb-3">
             <input
@@ -84,11 +89,16 @@ const ContactUsForm = () => {
               id="firstName"
               placeholder="First Name"
               name="first_name"
+              value={firstName}
+              onChange={(e) => {
+                if (isNameValid(e.target.value)) setFirstName(e.target.value);
+              }}
               required
             />
             <label htmlFor="firstName">First Name</label>
           </div>
         </div>
+
         <div className="col-md-4">
           <div className="form-floating mb-3">
             <input
@@ -97,11 +107,16 @@ const ContactUsForm = () => {
               id="lastName"
               placeholder="Last Name"
               name="last_name"
+              value={lastName}
+              onChange={(e) => {
+                if (isNameValid(e.target.value)) setLastName(e.target.value);
+              }}
               required
             />
             <label htmlFor="lastName">Last Name</label>
           </div>
         </div>
+
         <div className="col-md-4">
           <div className="form-floating mb-3">
             <input
@@ -110,31 +125,47 @@ const ContactUsForm = () => {
               id="workEmail"
               placeholder="Work Email"
               name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
             <label htmlFor="workEmail">Work Email</label>
           </div>
         </div>
-        <div className="col-md-4">
-          <div className="form-floating mb-3">
-            <input type="hidden" value={phoneValue} name="phone" required />
-            <PhoneInputWithCountrySelect
-              // value={value}
-              // onChange={setValue}
-              onChange={(e) => setPhoneValue(e)}
-              defaultCountry="IN"
-              className="form-floating"
-              numberInputProps={{
-                className: "form-control",
-                required: true,
-                name: "phone",
-                placeholder: "Phone",
-              }}
-              limitMaxLength={15}
-              labels={"Phone Number"}
-            />
-          </div>
-        </div>
+
+       <div className="col-md-4">
+  <div className="form-floating mb-3">
+    <input type="hidden" value={phoneValue} name="phone" required />
+    <PhoneInputWithCountrySelect
+      value={phoneValue}
+      onChange={(value) => {
+        // Remove country code and non-digits
+        const digitsOnly = value?.replace(/\D/g, "") || "";
+
+        // Remove country code (assumes IN/91 country code which is 2 digits)
+        const numberOnly = digitsOnly.startsWith("91")
+          ? digitsOnly.slice(2)
+          : digitsOnly;
+
+        // Allow only 10 digits max
+        if (numberOnly.length <= 10) {
+          setPhoneValue(value);
+        }
+      }}
+      defaultCountry="IN"
+      className="form-floating"
+      numberInputProps={{
+        className: "form-control",
+        required: true,
+        name: "phone",
+        placeholder: "Phone",
+      }}
+      limitMaxLength={15}
+    />
+  </div>
+</div>
+
+
         <div className="col-md-4">
           <div className="form-floating mb-3">
             <textarea
@@ -144,31 +175,21 @@ const ContactUsForm = () => {
               name="note"
               required
             ></textarea>
-            <label htmlFor="note">What tasks would you like to solve?</label>
+            <label htmlFor="note">Type your Message here….</label>
           </div>
         </div>
-        {/* <div className="col-md-4">
-          <div className="form-floating mb-3">
-            <select
-              id="interested_in"
-              name="interested_in"
-              required
-              className="form-control"
-            >
-              <option value={""}>Show Your Interest</option>
-              {INTERESTED_IN_CHOICES?.map((choice, index) => {
-                return (
-                  <option value={choice[0]} key={`iterested-choice-${index}`}>
-                    {choice[1]}
-                  </option>
-                );
-              })}
-            </select>
-            <label htmlFor="interested_in">Interested In</label>
-          </div>
-        </div> */}
+
         <div className="mb-3 mt-2 d-flex justify-content-end">
-          <CustomButton title={`Connect With Us`} className="w-auto" />
+          <CustomButton
+            title="Connect With Us"
+            className="w-auto"
+            disabled={
+              !firstName ||
+              !lastName ||
+              !isEmailValid ||
+              !isPhoneValid
+            }
+          />
         </div>
       </form>
     </>

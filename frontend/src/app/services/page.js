@@ -6,7 +6,7 @@ import ServiceGallery from "@/components/Gallery";
 const AboutUs = () => {
   return (
     <div>
-      <CommonBanner
+      <CommonBanner enableBlur={true}
         title="Our Services"
         subTitle="At WinCity InfraWorks LLP, we offer a full spectrum of digital signage and display solutions, designed to deliver long-term value and uninterrupted performance."
       />
@@ -14,15 +14,17 @@ const AboutUs = () => {
       <section className={`${style.service_container}`}>
         <div className="container">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+          <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
+
               <div>
                 <div className="fs-3 fw-bold">Deployment Strategy</div>
                 <div className="fs-5 fw-normal pb-2">
-                  Complete, hassle-free deployment of digital signage systems
+                Complete, hassle-free deployment of DSS(Digital Signage Solution)
+
                 </div>
 
                 <div>
-                  <div className="fw-bold">Site Inspection : </div>
+                  <div className="fw-bold">Site Inspection </div>
                   <ul>
                     <li>
                       Evaluate and identify ideal screen locations for maximum
@@ -34,8 +36,7 @@ const AboutUs = () => {
                   <div className="fw-bold">Secure Mounting & Configuration</div>
                   <ul>
                     <li>
-                      Precision screen installation with reliable mounting and
-                      optimal configuration.
+                    Precise screen installation with reliable mounting and optimal configuration.
                     </li>
                   </ul>
                 </div>
@@ -43,8 +44,7 @@ const AboutUs = () => {
                   <div className="fw-bold">System Integration</div>
                   <ul>
                     <li>
-                      Seamless setup with your existing IT & network
-                      infrastructure for uninterrupted operation.
+                    Seamless setup of IT & network infrastructure for uninterrupted operation.
                     </li>
                   </ul>
                 </div>
@@ -59,7 +59,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 order-1 order-md-2">
               <div
                 id="deployementStrategy"
                 className="carousel slide"
@@ -71,7 +71,7 @@ const AboutUs = () => {
                     data-bs-interval="10000"
                   >
                     <CustomImage
-                      src={`/services/deployment-strategy/deployement-strategy.avif`}
+                      src={`/services/deployment-strategy/deployement-strategy.jpg`}
                       wrapperClss="d-block w-100"
                     />
                   </div>
@@ -118,7 +118,7 @@ const AboutUs = () => {
           <hr></hr>
 
           <div className="row">
-            <div className="col-md-6">
+          <div className="col-md-6 order-1 order-md-1">
               <div
                 id="operationalUptimeManagement"
                 className="carousel slide"
@@ -174,7 +174,7 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 d-flex align-items-center order-2 order-md-2">
               <div>
                 <div className="fs-3 fw-bold">
                   Operational Uptime Management
@@ -185,7 +185,7 @@ const AboutUs = () => {
 
                 <div>
                   <div className="fw-bold">
-                    Scheduled Preventive Maintenance :{" "}
+                    Scheduled Preventive Maintenance {" "}
                   </div>
                   <ul>
                     <li>
@@ -195,11 +195,10 @@ const AboutUs = () => {
                   </ul>
                 </div>
                 <div>
-                  <div className="fw-bold">24/7 Technical Assistance</div>
+                  <div className="fw-bold">Technical Assistance</div>
                   <ul>
                     <li>
-                      Around-the-clock support to quickly resolve hardware and
-                      software issues.
+                    Prompt support to quickly resolve hardware and software issues.
                     </li>
                   </ul>
                 </div>
@@ -218,15 +217,15 @@ const AboutUs = () => {
           <hr></hr>
 
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
+          <div className="col-md-6 d-flex align-items-center order-2 order-md-1">
               <div>
-                <div className="fs-3 fw-bold">Content Operations</div>
+                <div className="fs-3 fw-bold">Content Management</div>
                 <div className="fs-5 fw-normal pb-2">
                   Simple yet powerful tools to control and manage screen content
                 </div>
 
                 <div>
-                  <div className="fw-bold">Intuitive CMS Interface : </div>
+                  <div className="fw-bold">Intuitive CMS Interface </div>
                   <ul>
                     <li>
                       Easy-to-use platform for managing content across multiple
@@ -254,7 +253,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 order-1 order-md-2">
               <div
                 id="contentOperation"
                 className="carousel slide"
@@ -339,12 +338,11 @@ const AboutUs = () => {
                         🛠️ Proven Expertise in Installation & Operations
                       </div>
                       <div>
-                        With over years of industry experience, our team excels
-                        in the installation and management of digital signage
-                        systems. We ensure precise screen placement, optimized
-                        configuration, and smooth operations—guaranteeing
-                        maximum visual impact and performance efficiency from
-                        day one.
+                      With over years of industry experience, our team excels in 
+                      the installation and management of digital signage solutions. 
+                      We ensure precise screen placement, optimized configuration, 
+                      and smooth operations—guaranteeing maximum visual impact and 
+                      performance efficiency from day one.
                       </div>
                     </p>
 
@@ -376,8 +374,8 @@ const AboutUs = () => {
                           <li>Site assessment</li>
                           <li>Hardware installation</li>
                           <li>Network integration</li>
-                          <li>Content deployment</li>
-                          <li>24/7 monitoring & support</li>
+                          <li>Content management </li>
+                          <li>Monitoring & support</li>
                         </ul>
                       </div>
                       <div>

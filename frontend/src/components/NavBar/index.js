@@ -10,7 +10,7 @@ export const MENU = [
     link: "/about-us",
   },
   {
-    name: "Services",
+    name: "Our Services",
     link: "/services",
   },
   {

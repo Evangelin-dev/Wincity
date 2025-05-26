@@ -6,6 +6,7 @@ import CustomButton from "../custom/CustomButton";
 import ContactUs from "../ContactUs";
 import FooterCopyRights from "./copyrights";
 
+
 const Footer = () => {
   return (
     <footer className={`text-color-white footer mt-auto py-3 text-white`}>
@@ -22,7 +23,7 @@ const Footer = () => {
               />
             </Link>
 
-            <div>WinCity InfraWorks LLP, is an initiative of Lokmat Media.</div>
+            <div>WinCity InfraWorks LLP - An initiative of Lokmat Media.</div>
             {/* <div className="py-3">
               <Link href="#" className={`pe-2`} target="_blank">
                 <i
@@ -47,12 +48,16 @@ const Footer = () => {
               <Link href={"/about-us"} className="py-2 text-white nav-link">
                 About Us
               </Link>
+              <Link href={"/services"} className="py-2 text-white nav-link">
+                Our Services
+              </Link>
+              <Link href={"/blogs"} className="py-2 text-white nav-link">
+              Blogs
+              </Link>
               <Link href={"/#contactUs"} className="py-2 text-white nav-link">
                 Contact Us
               </Link>
-              <Link href={"/services"} className="py-2 text-white nav-link">
-                Services
-              </Link>
+              
             </div>
           </div>
           <div className="col-md-3">
@@ -77,8 +82,7 @@ const Footer = () => {
             <div className="py-2 text-white nav-link">
               <i class="fa fa-map-marker pe-2 fs-4" aria-hidden="true"></i>
               <span>
-                B-126, FLOOR 12TH, PLOT NO 210, B WING, MITTAL TOWER, FREE PRESS
-                JOURNAL MARG, Nariman Point, Mumbai.
+              B-126, Floor 12TH, Plot No 210, B-Wing, Mittal Tower, Free Press Journal Marg, Nariman Point, Mumbai.
               </span>
             </div>
             <div className="py-2 text-white nav-link">
@@ -89,7 +93,7 @@ const Footer = () => {
                 className="text-white nav-link"
               >
                 <i class="fa fa-envelope-o pe-2 fs-4" aria-hidden="true"></i>{" "}
-                <span>kiran.masoriya@wincityinfraworks.com</span>
+                <span>admin@wincityinfraworks.com</span>
               </Link>
             </div>
             <div className="py-2 text-white nav-link">

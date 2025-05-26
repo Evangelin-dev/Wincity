@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Greenheap Gold And Silver Jewellery Private Limited",
-  description: "Greenheap Gold And Silver Jewellery Private Limited.",
+  title: "WinCity Infraworks Private Limited",
+  description: "WinCity Infraworks Private Limited.",
 };
 
 export default function RootLayout({ children }) {

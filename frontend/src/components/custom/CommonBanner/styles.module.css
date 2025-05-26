@@ -22,6 +22,7 @@
   line-height: 1.1;
   font-size: 4.5rem !important;
   width: 100%;
+  color: black;
 }
 
 .banner_sub_title {
@@ -31,6 +32,7 @@
   line-height: 1.1;
   font-size: 1.5rem !important;
   width: 75%;
+  color: black;
   font-weight: 400;
 }
 
@@ -55,3 +57,20 @@
     width: 100%;
   }
 }
+.banner_bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.blurOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.1); 
+  z-index: 1; 
+}
+
+
