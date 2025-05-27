@@ -16,7 +16,13 @@ const ContactUsForm = () => {
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const isNameValid = (name) => /^[A-Za-z]*$/.test(name);
-  const isPhoneValid = /^\d{13}$/.test(phoneValue?.replace(/\D/g, ""));
+const isPhoneValid = (() => {
+  const digits = phoneValue?.replace(/\D/g, "") || "";
+  // Extract last 10 digits (assumes local part)
+  const localNumber = digits.slice(-10);
+  return localNumber.length === 10;
+})();
+
   const isEmailValid = emailRegex.test(email);
 
   const saveContactUs = async (e) => {
@@ -133,36 +139,24 @@ const ContactUsForm = () => {
           </div>
         </div>
 
-       <div className="col-md-4">
-  <div className="form-floating mb-3">
-    <input type="hidden" value={phoneValue} name="phone" required />
-    <PhoneInputWithCountrySelect
-      value={phoneValue}
-      onChange={(value) => {
-        // Remove country code and non-digits
-        const digitsOnly = value?.replace(/\D/g, "") || "";
-
-        // Remove country code (assumes IN/91 country code which is 2 digits)
-        const numberOnly = digitsOnly.startsWith("91")
-          ? digitsOnly.slice(2)
-          : digitsOnly;
-
-        // Allow only 10 digits max
-        if (numberOnly.length <= 10) {
-          setPhoneValue(value);
-        }
-      }}
-      defaultCountry="IN"
-      className="form-floating"
-      numberInputProps={{
-        className: "form-control",
-        required: true,
-        name: "phone",
-        placeholder: "Phone",
-      }}
-      limitMaxLength={15}
-    />
-  </div>
+      <div className="col-md-4 mb-3">
+  <label htmlFor="phone" className="form-label">
+    Phone Number
+  </label>
+  <PhoneInputWithCountrySelect
+    id="phone"
+    value={phoneValue}
+    onChange={(value) => setPhoneValue(value)}
+    defaultCountry="IN"
+    className="form-control"
+    numberInputProps={{
+      className: "form-control",
+      required: true,
+      placeholder: "Phone",
+    }}
+    limitMaxLength={15}
+  />
+  <input type="hidden" name="phone" value={phoneValue} />
 </div>
 
 
