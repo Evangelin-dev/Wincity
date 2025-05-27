@@ -140,22 +140,28 @@ const isPhoneValid = (() => {
         </div>
 
       <div className="col-md-4 mb-3">
-  <label htmlFor="phone" className="form-label">
-    Phone Number
-  </label>
-  <PhoneInputWithCountrySelect
-    id="phone"
-    value={phoneValue}
-    onChange={(value) => setPhoneValue(value)}
-    defaultCountry="IN"
-    className="form-control"
-    numberInputProps={{
-      className: "form-control",
-      required: true,
-      placeholder: "Phone",
-    }}
-    limitMaxLength={15}
-  />
+ 
+ <PhoneInputWithCountrySelect
+  id="phone"
+  value={phoneValue}
+  onChange={(value) => {
+    const digits = value?.replace(/\D/g, "") || "";
+    const localPart = digits.slice(-10); // Get last 10 digits
+    if (localPart.length <= 10) {
+      setPhoneValue(value);
+    }
+  }}
+  defaultCountry="IN"
+  className="form-control"
+  numberInputProps={{
+    className: "form-control",
+    required: true,
+    placeholder: "Phone",
+    inputMode: "numeric",
+    maxLength: 12,
+  }}
+/>
+
   <input type="hidden" name="phone" value={phoneValue} />
 </div>
 
